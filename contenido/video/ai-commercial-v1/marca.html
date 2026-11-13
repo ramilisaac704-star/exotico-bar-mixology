@@ -1,0 +1,90 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--oro:#d9ad52;--oro2:#f3d78c;--oro3:#9c6f1f;--crema:#f4ead6}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:#050403;overflow:hidden}
+#fx{position:absolute;inset:0}
+.capa{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--crema)}
+.oro{background:linear-gradient(100deg,var(--oro3) 0%,var(--oro) 30%,var(--oro2) 50%,var(--oro) 70%,var(--oro3) 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+#nombre{font-family:'Cinzel',serif;font-weight:500;font-size:128px;line-height:1;padding-left:.2em}
+#sub{font-family:'Cinzel',serif;font-weight:400;font-size:44px;letter-spacing:.5em;margin-top:26px;padding-left:.5em;color:var(--oro2)}
+#filete{width:0;height:2px;background:linear-gradient(90deg,transparent,var(--oro),transparent);margin:56px 0 50px}
+#serv{font-family:'Outfit',sans-serif;font-weight:300;font-size:23px;letter-spacing:.2em;padding-left:.2em;white-space:nowrap}
+#serv b{color:var(--oro);font-weight:400;margin:0 .35em}
+#b .mini{font-family:'Cinzel',serif;font-size:36px;letter-spacing:.34em;color:var(--oro2);position:absolute;top:300px;left:0;right:0;padding-left:.34em}
+#b .mini small{display:block;font-size:15px;letter-spacing:.5em;margin-top:10px}
+#l1{font-family:'Cinzel',serif;font-weight:400;font-size:50px;letter-spacing:.14em;line-height:1.35;padding:0 80px}
+#l2{font-family:'Cinzel',serif;font-weight:600;font-size:74px;letter-spacing:.1em;line-height:1.2;margin-top:34px;padding:0 60px}
+#ig{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:66px;margin-top:120px}
+#l3{font-family:'Cinzel',serif;font-size:31px;letter-spacing:.24em;margin-top:44px;color:var(--oro2);padding:0 70px;line-height:1.5}
+#ia{position:absolute;bottom:92px;left:0;right:0;text-align:center;font-family:'Outfit';font-weight:300;font-size:21px;letter-spacing:.16em;color:rgba(244,234,214,.5)}
+</style></head><body>
+<canvas id="fx" width="1080" height="1920"></canvas>
+<div class="capa" id="a">
+  <div id="nombre" class="oro">EXÓTICO</div>
+  <div id="sub">BAR &amp; MIXOLOGY</div>
+  <div id="filete"></div>
+  <div id="serv">MIXOLOGÍA<b>•</b>SHOWTENDING<b>•</b>COCTELERÍA MOLECULAR</div>
+</div>
+<div class="capa" id="b">
+  <div class="mini">EXÓTICO<small>BAR &amp; MIXOLOGY</small></div>
+  <div id="l1">NO SERVIMOS<br>SOLAMENTE BEBIDAS.</div>
+  <div id="l2" class="oro">CREAMOS<br>EXPERIENCIAS.</div>
+  <div id="ig">@exotico_mixology</div>
+  <div id="l3">TU EVENTO MERECE SER INOLVIDABLE.</div>
+  <div id="ia">Imágenes generadas con inteligencia artificial</div>
+</div>
+<script>
+// Animación determinista: render(t) dibuja el fotograma del segundo t (0–9).
+const $ = id => document.getElementById(id);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ease = x => { x = clamp(x); return 1 - Math.pow(1 - x, 3); };
+const seg = (t, a, b) => ease((t - a) / (b - a));
+function rnd(i) { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }
+const P = Array.from({ length: 170 }, (_, i) => ({
+  x: rnd(i), y: rnd(i + 500), r: 1.2 + rnd(i + 900) * 5.5, v: 0.012 + rnd(i + 1300) * 0.04,
+  ph: rnd(i + 1700) * 6.28, d: rnd(i + 2100), sw: 0.01 + rnd(i + 2500) * 0.03 }));
+function particles(t) {
+  const c = $('fx').getContext('2d');
+  c.clearRect(0, 0, 1080, 1920);
+  const g = c.createRadialGradient(540, 860, 0, 540, 860, 1100);
+  const glow = 0.20 * seg(t, 0, 1.6);
+  g.addColorStop(0, `rgba(88,58,14,${glow})`); g.addColorStop(1, 'rgba(5,4,3,0)');
+  c.fillStyle = g; c.fillRect(0, 0, 1080, 1920);
+  c.globalCompositeOperation = 'lighter';
+  const appear = seg(t, 0, 1.2);
+  for (const p of P) {
+    const y = ((p.y - p.v * t) % 1 + 1) % 1 * 2040 - 60;
+    const x = (p.x + Math.sin(t * 0.6 + p.ph) * p.sw) * 1080;
+    const tw = 0.55 + 0.45 * Math.sin(t * (1.2 + p.d * 2.2) + p.ph);
+    const a = appear * tw * (0.18 + 0.55 * p.d);
+    const r = p.r * (1 + p.d * 2.2);
+    const gr = c.createRadialGradient(x, y, 0, x, y, r * 3);
+    gr.addColorStop(0, `rgba(255,226,150,${a})`); gr.addColorStop(0.35, `rgba(217,173,82,${a * 0.55})`); gr.addColorStop(1, 'rgba(217,173,82,0)');
+    c.fillStyle = gr; c.beginPath(); c.arc(x, y, r * 3, 0, 6.2832); c.fill();
+  }
+  c.globalCompositeOperation = 'source-over';
+}
+function render(t) {
+  particles(t);
+  const out = 1 - seg(t, 4.0, 4.6);                      // la capa A sale
+  const n = $('nombre'), nIn = seg(t, 0.5, 2.1);
+  n.style.opacity = nIn * out; n.style.letterSpacing = (0.52 - 0.32 * nIn) + 'em';
+  n.style.backgroundPosition = (100 - clamp((t - 1.0) / 2.6) * 100) + '% 0';
+  n.style.transform = `scale(${1 + 0.035 * clamp(t / 4.6)})`;
+  $('sub').style.opacity = seg(t, 1.5, 2.5) * out;
+  $('filete').style.width = (620 * seg(t, 2.0, 3.0)) + 'px'; $('filete').style.opacity = out;
+  $('serv').style.opacity = seg(t, 2.5, 3.4) * out;
+  $('a').style.transform = `translateY(${-70 + (1 - out) * -30}px)`;
+  const b = t - 4.5;
+  $('b').querySelector('.mini').style.opacity = seg(b, 0, 0.7);
+  $('l1').style.opacity = seg(b, 0.1, 0.9); $('l1').style.transform = `translateY(${(1 - seg(b, 0.1, 0.9)) * 26}px)`;
+  const l2 = $('l2'); l2.style.opacity = seg(b, 0.9, 1.7); l2.style.transform = `translateY(${(1 - seg(b, 0.9, 1.7)) * 26}px)`;
+  l2.style.backgroundPosition = (100 - clamp((b - 1.0) / 2.2) * 100) + '% 0';
+  $('ig').style.opacity = seg(b, 2.0, 2.8);
+  $('l3').style.opacity = seg(b, 2.5, 3.3);
+  $('ia').style.opacity = seg(b, 2.9, 3.6);
+}
+render(0);
+</script></body></html>

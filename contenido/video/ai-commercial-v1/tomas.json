@@ -1,0 +1,95 @@
+{
+  "estilo": ", ultra realistic photograph, cinematic lighting, high detail, professional photography",
+  "tomas": [
+    {
+      "id": "1a",
+      "seed": 11,
+      "prompt": "cinematic aerial drone photograph of an elegant luxury wedding ceremony on a white sand Caribbean beach at golden hour sunset, turquoise sea, rows of white chairs along a flower petal aisle, floral arch, palm trees, warm golden light"
+    },
+    {
+      "id": "1b",
+      "seed": 21,
+      "prompt": "cinematic wide photograph of a luxury beach wedding reception at dusk on a Caribbean beach, long banquet tables with candles and white flowers, hanging string lights between palm trees, turquoise ocean and orange sunset sky in the background, elegant guests mingling in the distance, warm golden light, 35mm film still"
+    },
+    {
+      "id": "2a",
+      "seed": 31,
+      "prompt": "cinematic photograph of a luxurious mobile cocktail bar with glossy black panels and brushed gold trim on a beachfront terrace at dusk, back shelf with premium spirit bottles lit by warm amber light, crystal glassware lined on the black marble counter, palm trees and ocean behind, elegant exclusive atmosphere, no people"
+    },
+    {
+      "id": "2b",
+      "seed": 43,
+      "prompt": "cinematic medium shot of a handsome Dominican Caribbean male bartender in his thirties with short dark hair and a trimmed beard, wearing a black shirt and dark leather apron, vigorously shaking a golden cocktail shaker held up with both hands behind a luxurious black and gold cocktail bar outdoors, confident slight smile, premium bottles softly glowing behind him, warm amber lighting, palm trees and ocean at dusk in the background, shallow depth of field, 50mm"
+    },
+    {
+      "id": "2c",
+      "seed": 51,
+      "prompt": "cinematic close-up of a black marble bar counter with crystal coupe glasses, a gold jigger, gold bar spoon and a golden shaker neatly arranged, warm amber light reflections, bokeh lights in the background, luxury, macro photography, shallow depth of field"
+    },
+    {
+      "id": "3a",
+      "seed": 61,
+      "prompt": "extreme close-up of a bartender's hand pouring an amber cocktail from a golden shaker into a crystal coupe glass, perfect smooth stream of liquid, black background with warm golden rim light, droplets, macro photography, shallow depth of field"
+    },
+    {
+      "id": "3b",
+      "seed": 71,
+      "prompt": "high speed macro photograph of crystal clear ice cubes falling into a golden cocktail shaker with a splash, frozen motion, water droplets in the air, black background, dramatic golden backlight"
+    },
+    {
+      "id": "3c",
+      "seed": 81,
+      "prompt": "close-up still life of fresh tropical fruits for cocktails, halved passion fruit, pineapple slices, lime and orange wedges, mint leaves, on a black marble surface with water droplets, dramatic warm side light, dark background, food photography"
+    },
+    {
+      "id": "3d",
+      "seed": 91,
+      "prompt": "cinematic close-up of an amber cocktail in a crystal glass under a glass cloche dome filled with swirling white smoke, on a black marble bar, golden backlight, bokeh, luxury mixology, shallow depth of field"
+    },
+    {
+      "id": "3e",
+      "seed": 101,
+      "prompt": "macro photograph of a cocktail in a crystal coupe glass topped with a large translucent smoke filled bubble, molecular mixology, amber liquid, black background, warm golden light, reflections"
+    },
+    {
+      "id": "3f",
+      "seed": 111,
+      "prompt": "cinematic close-up of a row of elegant cocktails in crystal glassware on a black marble bar, deep ruby red, golden amber, emerald green and coral orange drinks with refined garnishes, warm backlight, bokeh, luxury, shallow depth of field"
+    },
+    {
+      "id": "4a",
+      "seed": 121,
+      "prompt": "cinematic candid photograph of two elegant Latina women and a Latino man in formal evening attire at a luxury Caribbean beach party at dusk, looking amazed and delighted at a smoking cocktail on a black bar counter in front of them, genuine surprised smiles, warm golden light, string lights bokeh, shallow depth of field, 85mm"
+    },
+    {
+      "id": "4b",
+      "seed": 131,
+      "prompt": "cinematic photograph of four elegant Latin American friends, two women and two men in formal summer attire, raising crystal cocktail glasses in a toast and laughing, luxury Caribbean beachfront celebration at sunset, warm golden backlight, palm trees and ocean bokeh, candid joyful moment, 50mm"
+    },
+    {
+      "id": "4c",
+      "seed": 141,
+      "prompt": "cinematic close-up portrait of an elegant Caribbean Latina woman in an evening dress smiling with delight while holding a crystal coupe cocktail with white smoke flowing over the rim, luxury evening beach event, warm golden bokeh lights, shallow depth of field, 85mm"
+    },
+    {
+      "id": "5a",
+      "seed": 151,
+      "prompt": "cinematic photograph of a Latin American bride and groom toasting with champagne coupes at a luxury Caribbean beach wedding reception at sunset, candles and white flowers, warm golden light, joyful, 50mm, shallow depth of field"
+    },
+    {
+      "id": "5b",
+      "seed": 161,
+      "prompt": "cinematic photograph of an elegant birthday celebration dinner at night on a tropical terrace, a beautifully decorated cake with lit candles on a long table with gold tableware and cocktails, well dressed Latin American guests smiling in soft focus, warm amber light, luxury"
+    },
+    {
+      "id": "5c",
+      "seed": 171,
+      "prompt": "cinematic photograph of a sophisticated corporate cocktail reception in a modern luxury Caribbean resort venue, Latin American business professionals in suits and dresses talking with cocktails in hand, black and gold decor, warm lighting, shallow depth of field"
+    },
+    {
+      "id": "5d",
+      "seed": 181,
+      "prompt": "cinematic wide photograph of an intimate private celebration on a Caribbean beach at night, a small group of elegant friends around a candlelit table by the sea, string lights, torches, moonlight on the water, warm glow, 35mm"
+    }
+  ]
+}

@@ -67,8 +67,19 @@ def cmd_start(_args):
     cmd = [str(python), "main.py", "--listen", HOST, "--port", str(PORT)]
     if tier() == "cpu":
         cmd.append("--cpu")
+        # Los Xeon con AMX/AVX512-BF16 calculan en media precisión 4-6 veces más rápido.
+        try:
+            flags = Path("/proc/cpuinfo").read_text()
+        except OSError:
+            flags = ""
+        if "amx_bf16" in flags or "avx512_bf16" in flags:
+            cmd += ["--bf16-unet", "--bf16-vae", "--bf16-text-enc"]
+    cmd += os.environ.get("COMFY_ARGS", "").split()
+    env = dict(os.environ)
+    if "--bf16-unet" in cmd:
+        env["COMFY_CPU_BF16"] = "1"   # requiere el parche de install.sh en model_management.py
     with open(LOG_FILE, "ab") as log:
-        proc = subprocess.Popen(cmd, cwd=COMFY_DIR, stdout=log, stderr=log, start_new_session=True)
+        proc = subprocess.Popen(cmd, cwd=COMFY_DIR, stdout=log, stderr=log, start_new_session=True, env=env)
     PID_FILE.write_text(str(proc.pid))
     for _ in range(180):
         if is_up():
