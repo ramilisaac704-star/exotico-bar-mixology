@@ -1,0 +1,19 @@
+{
+  "fps": 30,
+  "musica": {"archivo": "Romantic_Inspiration.mp3", "acento_s": 86.5, "pulsos_hasta_acento": 36, "bpm": 99.384},
+  "voz": {"modelo": "kokoro em_alex", "velocidad": 0.88, "tono": 0.92},
+  "escenas": [
+    {"nombre": "1 El paraíso", "narracion": "Hay momentos que merecen ser inolvidables.", "voz_en_pulso": 1.5,
+     "planos": [["1x", 4, "dron"], ["1a", 3, "avance"], ["1b", 3, "lateral_d"]]},
+    {"nombre": "2 La experiencia", "narracion": "No se trata solamente de organizar un evento...", "voz_en_pulso": 1.0,
+     "planos": [["2a", 4, "avance"], ["2b", 5, "orbita"], ["2c", 3, "lateral_i"]]},
+    {"nombre": "3 El arte de la mixología", "narracion": "Se trata de transformar cada detalle en arte.", "voz_en_pulso": 1.0,
+     "planos": [["3a", 3, "avance"], ["3b", 2, "retroceso"], ["3c", 2, "lateral_d"], ["3d", 3, "orbita"], ["3e", 2, "avance"], ["3f", 2, "lateral_i"]]},
+    {"nombre": "4 El factor wow", "narracion": "Crear emociones, sorprender los sentidos, y convertir una celebración en una experiencia extraordinaria.", "voz_en_pulso": 0.8,
+     "planos": [["4a", 5, "avance"], ["4c", 4, "orbita"], ["4b", 5, "lateral_d"]]},
+    {"nombre": "5 Los eventos", "narracion": "Tu boda, cumpleaños o evento corporativo, merece algo diferente.", "voz_en_pulso": 0.8,
+     "planos": [["5a", 3, "avance"], ["5b", 2, "lateral_i"], ["5c", 2, "lateral_d"], ["5d", 3, "retroceso"]]}
+  ],
+  "marca_s": 8.8,
+  "seleccion": {}
+}
