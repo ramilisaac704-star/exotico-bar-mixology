@@ -49,7 +49,7 @@ pip install --quiet -r requirements.txt
 # solo se descargan a mano en niveles con GPU: ver SKILL.md.
 CKPT="models/checkpoints/v1-5-pruned-emaonly-fp16.safetensors"
 if [ ! -s "$CKPT" ]; then
-  curl -L --fail --retry 3 -o "$CKPT" \
+  curl -sSL --fail --retry 3 -o "$CKPT" \
     "https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/resolve/main/v1-5-pruned-emaonly-fp16.safetensors"
 fi
 
