@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Exótico — historias para destacadas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{ --negro:#0a0806; --oro:#d9ad52; --oro2:#f3d78c; --oro3:#9c6f1f; --crema:#f4ead6; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#333;display:flex;flex-wrap:wrap;gap:30px;padding:30px;font-family:'Outfit',sans-serif}
+  /* Zonas seguras de historia: 250 px arriba y 340 px abajo sin texto */
+  .h{width:1080px;height:1920px;position:relative;overflow:hidden;background:var(--negro);color:var(--crema)}
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,.8) 0,rgba(10,8,6,.1) 22%,rgba(10,8,6,0) 45%,rgba(10,8,6,.9) 72%,rgba(10,8,6,.98) 100%)}
+  .marco{position:absolute;inset:40px;border:2px solid rgba(217,173,82,.5)}
+  .marca{position:absolute;top:270px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;color:var(--oro);line-height:1}
+  .marca b{display:block;font-weight:500;font-size:46px;letter-spacing:.16em}
+  .marca span{display:block;font-size:19px;letter-spacing:.44em;margin-top:12px}
+  .cont{position:absolute;left:110px;right:110px;bottom:400px}
+  .eti{font-family:'Cinzel',serif;font-size:26px;letter-spacing:.4em;text-transform:uppercase;color:var(--oro)}
+  .eti::after{content:"";display:block;width:90px;height:1px;background:var(--oro);margin-top:26px;opacity:.8}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:132px;line-height:.96;margin-top:30px;letter-spacing:-.01em}
+  em{font-style:italic;font-weight:500;background:linear-gradient(100deg,var(--oro2),var(--oro) 55%,var(--oro3));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+  p{font-weight:300;font-size:40px;line-height:1.32;margin-top:30px}
+  .centro{position:absolute;left:110px;right:110px;top:50%;transform:translateY(-46%);text-align:left}
+  ul{list-style:none;margin-top:60px}
+  li{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:68px;padding:34px 0;border-top:1px solid rgba(217,173,82,.45);display:flex;gap:36px;align-items:baseline}
+  li:last-child{border-bottom:1px solid rgba(217,173,82,.45)}
+  li b{font-family:'Cinzel',serif;font-weight:500;color:var(--oro);font-size:28px;min-width:60px}
+  .foto{position:absolute;left:110px;right:110px;top:440px;height:1000px;border:2px solid rgba(217,173,82,.6);padding:16px}
+  .foto img{width:100%;height:100%;object-fit:cover;display:block}
+  .pie{position:absolute;left:110px;right:110px;bottom:400px;text-align:center}
+  .pie .eti::after{margin:26px auto 0}
+  .sello{display:block;width:460px;height:460px;margin:0 auto}
+  .tel{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:110px;margin-top:20px;letter-spacing:.02em}
+  .ctr{text-align:center}
+  .ctr .eti::after{margin:26px auto 0}
+</style>
+</head>
+<body>
+
+<!-- SERVICIOS -->
+<section class="h" id="s1"><img class="bg" src="../../fotos/g-barra.webp" style="object-position:50% 30%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont"><div class="eti">Servicios</div><h1>Llevo la barra<br>a <em>tu evento.</em></h1><p>Mobile bar premium con mixología de autor y show en vivo.</p></div></section>
+
+<section class="h" id="s2"><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="centro"><div class="eti">Lo que hago</div>
+    <ul><li><b>01</b>Barra móvil premium</li><li><b>02</b>Mixología de autor</li><li><b>03</b>Show de coctelería en vivo</li><li><b>04</b>Mixología molecular</li></ul></div></section>
+
+<section class="h" id="s3"><img class="bg" src="../../fotos/exp-coctel.webp" style="object-position:62% 40%;opacity:.35" alt=""><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="centro"><div class="eti">Para tu celebración</div>
+    <ul><li>Bodas</li><li>Cumpleaños</li><li>Eventos privados</li><li>Eventos corporativos</li></ul></div></section>
+
+<!-- SHOWTENDING -->
+<section class="h" id="w1"><img class="bg" src="../../fotos/g-balance.webp" style="object-position:60% 50%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont"><div class="eti">Showtending</div><h1>El show también<br><em>se sirve.</em></h1></div></section>
+
+<section class="h" id="w2"><img class="bg" src="../../fotos/g-flair.webp" style="object-position:62% 50%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="cont"><div class="eti">Showtending</div><h1>Botellas<br><em>en el aire.</em></h1></div></section>
+
+<section class="h" id="w3"><img class="bg" src="../../fotos/exp-show.webp" style="object-position:62% 50%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="cont"><div class="eti">Showtending</div><h1>Tu barra,<br><em>el escenario.</em></h1></div></section>
+
+<!-- MOLECULAR -->
+<section class="h" id="m1"><img class="bg" src="../../fotos/exp-molecular.webp" style="object-position:28% 30%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont"><div class="eti">Mixología molecular</div><h1>Humo, fuego<br>y <em>show.</em></h1></div></section>
+
+<section class="h" id="m2"><img class="bg" src="../../fotos/hero-poster.jpg" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="cont"><div class="eti">Mixología molecular</div><h1>Se ve. Se huele.<br><em>Se prueba.</em></h1></div></section>
+
+<!-- EVENTOS -->
+<section class="h" id="e1"><img class="bg" src="../../fotos/exp-coctel.webp" style="object-position:62% 40%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont"><div class="eti">Eventos</div><h1>Donde tú<br><em>celebres.</em></h1></div></section>
+
+<section class="h" id="e2"><img class="bg" src="../../fotos/g-pour.webp" style="object-position:50% 30%" alt=""><div class="velo"></div><div class="marco"></div>
+  <div class="cont"><div class="eti">Eventos</div><h1>Cada cóctel,<br><em>frente a ti.</em></h1></div></section>
+
+<!-- GALERÍA -->
+<section class="h" id="g1"><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="foto"><img src="../../fotos/g-pinkpour.webp" alt=""></div>
+  <div class="pie"><div class="eti">Galería</div></div></section>
+
+<section class="h" id="g2"><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="foto"><img src="../../fotos/g-bubbles.webp" alt=""></div>
+  <div class="pie"><div class="eti">Cócteles de autor</div></div></section>
+
+<!-- CONTACTO -->
+<section class="h" id="c1" style="background:radial-gradient(80% 45% at 50% 38%,#2a1d08,var(--negro) 70%)"><div class="marco"></div>
+  <div class="centro ctr" style="transform:translateY(-50%)"><img class="sello" src="../../fotos/sello.webp" alt="">
+    <h1 style="margin-top:60px">Reserva <em>tu fecha.</em></h1>
+    <div class="eti" style="margin-top:60px">WhatsApp</div>
+    <div class="tel">829-320-9581</div>
+    <p style="font-size:34px;letter-spacing:.06em">Punta Cana · Bávaro · toda RD</p></div></section>
+
+</body>
+</html>
