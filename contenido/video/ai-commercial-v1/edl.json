@@ -1,0 +1,158 @@
+{
+  "fps": 30,
+  "cuerpo_s": 36.233,
+  "planos": [
+    {
+      "plano": "1x",
+      "imagen": "1x_s11.png",
+      "movimiento": "dron",
+      "entra": 0.0,
+      "sale": 2.4,
+      "escena": "1 El paraíso"
+    },
+    {
+      "plano": "1a",
+      "imagen": "1a_s11.png",
+      "movimiento": "avance",
+      "entra": 2.4,
+      "sale": 4.233,
+      "escena": "1 El paraíso"
+    },
+    {
+      "plano": "1b",
+      "imagen": "1b_s21.png",
+      "movimiento": "lateral_d",
+      "entra": 4.233,
+      "sale": 6.033,
+      "escena": "1 El paraíso"
+    },
+    {
+      "plano": "2a",
+      "imagen": "2a_s31.png",
+      "movimiento": "avance",
+      "entra": 6.033,
+      "sale": 8.467,
+      "escena": "2 La experiencia"
+    },
+    {
+      "plano": "2b",
+      "imagen": "2b_s47.png",
+      "movimiento": "orbita",
+      "entra": 8.467,
+      "sale": 11.467,
+      "escena": "2 La experiencia"
+    },
+    {
+      "plano": "2c",
+      "imagen": "2c_s53.png",
+      "movimiento": "lateral_i",
+      "entra": 11.467,
+      "sale": 13.267,
+      "escena": "2 La experiencia"
+    },
+    {
+      "plano": "3a",
+      "imagen": "3a_s61.png",
+      "movimiento": "avance",
+      "entra": 13.267,
+      "sale": 15.1,
+      "escena": "3 El arte de la mixología"
+    },
+    {
+      "plano": "3b",
+      "imagen": "3b_s71.png",
+      "movimiento": "retroceso",
+      "entra": 15.1,
+      "sale": 16.3,
+      "escena": "3 El arte de la mixología"
+    },
+    {
+      "plano": "3c",
+      "imagen": "3c_s83.png",
+      "movimiento": "lateral_d",
+      "entra": 16.3,
+      "sale": 17.5,
+      "escena": "3 El arte de la mixología"
+    },
+    {
+      "plano": "3d",
+      "imagen": "3d_s93.png",
+      "movimiento": "orbita",
+      "entra": 17.5,
+      "sale": 19.333,
+      "escena": "3 El arte de la mixología"
+    },
+    {
+      "plano": "3e",
+      "imagen": "3e_s101.png",
+      "movimiento": "avance",
+      "entra": 19.333,
+      "sale": 20.533,
+      "escena": "3 El arte de la mixología"
+    },
+    {
+      "plano": "3f",
+      "imagen": "3f_s111.png",
+      "movimiento": "lateral_i",
+      "entra": 20.533,
+      "sale": 21.733,
+      "escena": "3 El arte de la mixología"
+    },
+    {
+      "plano": "4a",
+      "imagen": "4a_s121.png",
+      "movimiento": "avance",
+      "entra": 21.733,
+      "sale": 24.767,
+      "escena": "4 El factor wow"
+    },
+    {
+      "plano": "4c",
+      "imagen": "4c_s141.png",
+      "movimiento": "orbita",
+      "entra": 24.767,
+      "sale": 27.167,
+      "escena": "4 El factor wow"
+    },
+    {
+      "plano": "4b",
+      "imagen": "4b_s133.png",
+      "movimiento": "lateral_d",
+      "entra": 27.167,
+      "sale": 30.2,
+      "escena": "4 El factor wow"
+    },
+    {
+      "plano": "5a",
+      "imagen": "5a_s151.png",
+      "movimiento": "avance",
+      "entra": 30.2,
+      "sale": 32.0,
+      "escena": "5 Los eventos"
+    },
+    {
+      "plano": "5b",
+      "imagen": "5b_s163.png",
+      "movimiento": "lateral_i",
+      "entra": 32.0,
+      "sale": 33.2,
+      "escena": "5 Los eventos"
+    },
+    {
+      "plano": "5c",
+      "imagen": "5c_s171.png",
+      "movimiento": "lateral_d",
+      "entra": 33.2,
+      "sale": 34.4,
+      "escena": "5 Los eventos"
+    },
+    {
+      "plano": "5d",
+      "imagen": "5d_s181.png",
+      "movimiento": "retroceso",
+      "entra": 34.4,
+      "sale": 36.233,
+      "escena": "5 Los eventos"
+    }
+  ]
+}

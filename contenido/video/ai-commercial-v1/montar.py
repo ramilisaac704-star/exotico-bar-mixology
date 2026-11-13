@@ -21,7 +21,7 @@ def ff(*args):
 # 1. Subtítulos: una frase larga se parte en dos pantallas --------------------
 subs = []
 for n in au["narracion"]:
-    text, a, b = n["texto"].replace("...", "…"), n["entra"], n["sale"]
+    text, a, b = n["texto"].replace("...", "…").replace(", merece", " merece"), n["entra"], n["sale"]
     parts = [text]
     if len(text) > 70 and ", y " in text:
         i = text.index(", y ")
@@ -37,9 +37,10 @@ html = """<!doctype html><html><head><meta charset="utf-8">
 <style>*{margin:0;padding:0}body{background:transparent}
 .f{width:1080px;height:1920px;position:relative}
 .s{position:absolute;left:90px;right:90px;bottom:350px;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;
-font-weight:600;font-size:60px;line-height:1.18;color:#f6ecd8;text-shadow:0 2px 6px rgba(0,0,0,.85),0 0 34px rgba(0,0,0,.75),0 0 80px rgba(0,0,0,.5);text-wrap:balance}
+font-weight:600;font-size:66px;line-height:1.16;color:#f8efdc;text-shadow:0 2px 5px rgba(0,0,0,.9),0 0 26px rgba(0,0,0,.8);text-wrap:balance}
+.v{position:absolute;left:-60px;right:-60px;bottom:210px;height:470px;background:radial-gradient(50%% 50%% at 50%% 50%%,rgba(8,6,4,.62),rgba(8,6,4,.38) 55%%,rgba(8,6,4,0) 100%%)}
 </style></head><body>%s</body></html>""" % "".join(
-    f'<div class="f" id="s{i}"><div class="s">{s["texto"]}</div></div>' for i, s in enumerate(subs))
+    f'<div class="f" id="s{i}"><div class="v"></div><div class="s">{s["texto"]}</div></div>' for i, s in enumerate(subs))
 (OUT / "subs.html").write_text(html)
 (OUT / "subs.js").write_text("""
 const { chromium } = require('playwright');

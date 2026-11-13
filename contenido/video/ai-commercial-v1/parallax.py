@@ -43,7 +43,8 @@ def pick(shot_id):
 xs, ys = np.meshgrid(np.arange(W, dtype=np.float32), np.arange(H, dtype=np.float32))
 t = 0.0; frame = 0; edl = []
 for esc in cfg["escenas"]:
-    for shot_id, beats, mov in esc["planos"]:
+    for shot_id, beats, mov, *extra in esc["planos"]:
+        opt = extra[0] if extra else {}                 # {"cy": centro vertical 0-1, "z": [zoom inicial, final]}
         end = round((t + beats * BEAT) * FPS); n = end - frame
         path = pick(shot_id)
         out = OUT / f"{shot_id}.mp4"
@@ -51,7 +52,7 @@ for esc in cfg["escenas"]:
                     "entra": round(frame / FPS, 3), "sale": round(end / FPS, 3), "escena": esc["nombre"]})
         t += beats * BEAT; frame = end
         stamp = OUT / f"{shot_id}.json"
-        meta = {"imagen": path.name, "n": n, "mov": mov}
+        meta = {"imagen": path.name, "n": n, "mov": mov, "opt": opt}
         if out.exists() and stamp.exists() and json.loads(stamp.read_text()) == meta:
             continue
         img = Image.open(path).convert("RGB")
@@ -60,7 +61,7 @@ for esc in cfg["escenas"]:
         src = cv2.resize(np.array(img)[:, :, ::-1], (SW, SH), interpolation=cv2.INTER_LANCZOS4)
         dep = cv2.GaussianBlur(cv2.resize(d, (SW, SH), interpolation=cv2.INTER_CUBIC), (0, 0), 9)
         focus = float(np.median(dep))
-        m = MOV[mov]
+        m = dict(MOV[mov]); m["z"] = tuple(opt.get("z", m["z"])); cy = opt.get("cy", 0.5)
         ff = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "bgr24", "-s", f"{W}x{H}",
                                "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "13",
                                "-pix_fmt", "yuv420p", str(out)], stdin=subprocess.PIPE)
@@ -71,7 +72,7 @@ for esc in cfg["escenas"]:
             sx = m["sx"][0] + (m["sx"][1] - m["sx"][0]) * u
             sy = m["sy"][0] + (m["sy"][1] - m["sy"][0]) * u
             bx = (xs - W / 2) / z * k + SW / 2
-            by = (ys - H / 2) / z * k + SH / 2
+            by = (ys - H / 2) / z * k + SH * cy
             dd = cv2.remap(dep, bx, by, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT) - focus
             fr = cv2.remap(src, bx + sx * dd * 2.2, by + sy * dd * 2.2, cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
             ff.stdin.write(fr.tobytes())

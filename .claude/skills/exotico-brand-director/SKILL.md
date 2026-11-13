@@ -85,6 +85,7 @@ Métricas que importan, en orden: solicitudes por WhatsApp, visitas al perfil, t
 
 - No inventar testimonios, clientes, eventos, cifras, premios ni fotografías que aparenten ser reales.
 - La IA generativa solo mejora material real (nitidez, ruido, color, subtítulos) o crea gráficos claramente gráficos. Nunca escenas de eventos.
+- **Excepción pedida por el dueño:** comerciales conceptuales hechos íntegramente con IA (como `contenido/video/ai-commercial-v1/`). Solo si él lo solicita, sin mezclar con material real como si fuera el mismo evento, sin rostros de personas reales, y con el aviso «Imágenes generadas con inteligencia artificial» en la pieza y la etiqueta de IA de la plataforma al publicar.
 - No presentar un evento como «boda» o «corporativo» sin confirmación del dueño.
 - No destacar marcas de licores visibles ni sugerir patrocinio.
 - Pedir permiso al cliente antes de mostrar su evento o su mensaje.

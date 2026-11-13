@@ -24,6 +24,7 @@ Antes de generar nada para la marca, aplica `exotico-brand-director`.
 | `scripts/comfy.py` | Cliente: `start`, `stop`, `status`, `txt2img`, `img2img`, `run` |
 | `workflows/txt2img-sd15.json` | Texto → imagen |
 | `workflows/img2img-sd15.json` | Foto → imagen |
+| `workflows/txt2img-sdxl-lightning.json` | Texto → imagen fotorrealista (SDXL, requiere CPU con AMX o GPU) |
 
 Todo es software libre: ComfyUI (GPL-3.0), PyTorch (BSD), Stable Diffusion 1.5 (CreativeML OpenRAIL-M, permite uso comercial con restricciones de contenido).
 
@@ -119,12 +120,28 @@ No hay flujos de video incluidos porque no se pudieron verificar sin GPU. Modelo
 
 Con GPU: carga la plantilla oficial del modelo en ComfyUI (menú *Workflow → Browse Templates*), expórtala en formato API, guárdala en `workflows/` y ejecútala con `comfy.py run`. Verifica la licencia de cada modelo antes de usarlo en publicidad.
 
+## CPU con AMX: SDXL fotorrealista sin GPU
+
+Los Xeon recientes (indicadores `amx_bf16` o `avx512_bf16` en `/proc/cpuinfo`) calculan en media precisión de 3 a 6 veces más rápido. `install.sh` lo detecta, parchea ComfyUI y descarga **RealVisXL V5.0 Lightning** (SDXL, OpenRAIL++); `comfy.py start` activa el modo solo.
+
+```bash
+python3 .claude/skills/comfyui-studio/scripts/comfy.py run txt2img-sdxl-lightning.json \
+  --set "6.inputs.text=cinematic photograph of ..., ultra realistic photograph, cinematic lighting" \
+  --set 3.inputs.seed=11 --out /ruta
+```
+
+- 768 × 1344 (9:16), 6 pasos, `euler` / `sgm_uniform`, CFG 1: **unos 95 s por imagen**, calidad apta para piezas finales.
+- SDXL ocupa ~9 GB de RAM: no ejecutes a la vez otros procesos pesados (el contenedor se reinicia si se agota la memoria) y detén el servidor con `comfy.py stop` al terminar.
+- Revisa cada imagen a resolución completa: manos, caras en grupo y objetos apilados fallan a menudo; regenera con otra semilla.
+- Ejemplo completo de producción: `contenido/video/ai-commercial-v1/` (imágenes → paralaje 3D → voz → música → montaje).
+
 ## Resultados verificados (sesión en la nube, 4 núcleos, 15 GB RAM, sin GPU)
 
 | Prueba | Tamaño | Tiempo |
 |---|---|---|
 | `txt2img`, 20 pasos | 512 × 768 | 347 s |
 | `img2img`, 20 pasos, denoise 0.5 | 512 × 896 | 429 s |
+| SDXL Lightning, 6 pasos, media precisión | 768 × 1344 | ~95 s |
 
 Calidad: suficiente para fondos y bocetos; por debajo del estándar de marca para piezas finales.
 

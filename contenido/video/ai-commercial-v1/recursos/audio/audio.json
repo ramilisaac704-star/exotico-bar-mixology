@@ -1,0 +1,46 @@
+{
+  "total_s": 45.023,
+  "cuerpo_s": 36.223,
+  "musica_desde_s": 64.9,
+  "acento_s": 86.634,
+  "escenas_s": [
+    0.0,
+    6.037,
+    13.282,
+    21.734,
+    30.186,
+    36.223
+  ],
+  "narracion": [
+    {
+      "linea": 1,
+      "texto": "Hay momentos que merecen ser inolvidables.",
+      "entra": 0.91,
+      "sale": 3.73
+    },
+    {
+      "linea": 2,
+      "texto": "No se trata solamente de organizar un evento...",
+      "entra": 6.64,
+      "sale": 9.78
+    },
+    {
+      "linea": 3,
+      "texto": "Se trata de transformar cada detalle en arte.",
+      "entra": 13.89,
+      "sale": 16.88
+    },
+    {
+      "linea": 4,
+      "texto": "Crear emociones, sorprender los sentidos, y convertir una celebración en una experiencia extraordinaria.",
+      "entra": 22.22,
+      "sale": 28.73
+    },
+    {
+      "linea": 5,
+      "texto": "Tu boda, cumpleaños o evento corporativo, merece algo diferente.",
+      "entra": 30.67,
+      "sale": 35.2
+    }
+  ]
+}

@@ -23,7 +23,7 @@ rng = np.random.default_rng(7)
 starts, shots, t = [], {}, 0.0
 for esc in cfg["escenas"]:
     starts.append(t)
-    for shot_id, beats, _ in esc["planos"]:
+    for shot_id, beats, *_ in esc["planos"]:
         shots[shot_id] = t
         t += beats * BEAT
 BODY = t
