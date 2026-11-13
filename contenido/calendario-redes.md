@@ -1,9 +1,9 @@
-# Exótico Bar Mixology — plan de contenido para redes (2 semanas)
+# Exótico Bar & Mixology — plan de contenido para redes (2 semanas)
 
 Barra móvil de coctelería para eventos. Plan pensado para Instagram y TikTok, reutilizable en Facebook.
 
 **Antes de publicar, completa lo que va entre corchetes:** `[ciudad]`, `[WhatsApp]`, `[@usuario]`.
-Las recetas, lo que incluye el servicio y las frases sobre disponibilidad son propuestas: ajústalas a lo que realmente ofreces.
+Lo que incluye el servicio es una propuesta: ajústalo a lo que realmente ofreces. Los gráficos usan tus fotos (`fotos/`) y los colores de tu sello: negro y dorado.
 
 ## Pilares
 
@@ -19,10 +19,10 @@ Historias: 3–5 al día en días de evento (montaje, primer cóctel, brindis, p
 ## Semana 1
 
 ### Lunes — Presentación (imagen)
-**Gráfico:** `graficos/01-presentacion.png`
+**Gráfico:** `graficos/01-presentacion.jpg`
 
 > Llevamos el bar a tu evento. 🍹
-> Somos Exótico Bar Mixology: barra móvil de coctelería de autor para bodas, cumpleaños y eventos privados en [ciudad].
+> Somos Exótico Bar & Mixology: barra móvil, coctelería de autor y show en vivo para bodas, cumpleaños y eventos privados en [ciudad].
 > Tú eliges la fecha, nosotros llegamos con la barra, los bartenders y una carta hecha para tu celebración.
 > 📩 Escríbenos por mensaje directo o al [WhatsApp] para cotizar.
 
@@ -37,40 +37,40 @@ Historias: 3–5 al día en días de evento (montaje, primer cóctel, brindis, p
 > Llegamos antes que tus invitados y nos vamos cuando termina la fiesta. Barra, bartenders e insumos: todo incluido. 📩 Cotiza tu fecha por mensaje directo.
 
 ### Miércoles — Carrusel: qué incluye
-**Gráfico de portada:** `graficos/02-que-incluye.png` (añade fotos reales en las siguientes láminas, una por punto).
+**Gráfico de portada:** `graficos/02-que-incluye.jpg`, seguido de `03-show-de-flair.jpg`, `04-mixologia-molecular.jpg` y `05-cocteleria-de-autor.jpg`.
 
 > ¿Qué incluye nuestra barra? Desliza 👉
 > 1. Barra montada y decorada
 > 2. Bartenders profesionales
 > 3. Carta diseñada para tu evento
-> 4. Cristalería, hielo e insumos
-> 5. Opciones sin alcohol para que todos brinden
+> 4. Show de flair y coctelería con humo
+> 5. Cristalería, hielo e insumos
 > Guarda esta publicación para cuando estés organizando tu evento.
 
 ### Jueves — Historia: encuesta
-**Gráfico:** `graficos/05-historia-encuesta.png` + sticker de encuesta “Mojito / Margarita”.
-Al día siguiente, comparte el resultado y el cóctel ganador preparado en video.
+**Gráfico:** `graficos/07-historia-encuesta.jpg` + sticker de encuesta “Con humo / Sin humo” (colócalo en la franja libre de abajo).
+Al día siguiente, comparte el resultado con un video del cóctel ahumado.
 
-### Viernes — Cóctel de la casa (imagen)
-**Gráfico:** `graficos/03-coctel-maracuya.png`
+### Viernes — Mixología molecular (imagen)
+**Gráfico:** `graficos/04-mixologia-molecular.jpg` (o la foto `fotos/hero-poster.jpg` sin texto).
 
-> Maracuyá Exótico: fresco, tropical y con el punto justo de acidez. 🧡
-> Ron blanco, pulpa de maracuyá, limón, jarabe y hierbabuena. Agita con hielo y sirve.
-> Guarda la receta para el fin de semana… o déjanos prepararlo en tu evento. 😉
+> Humo, burbujas aromáticas y cócteles que se viven con todos los sentidos. 💨
+> La mixología molecular es parte del show: tus invitados lo ven, lo huelen y después lo prueban.
+> ¿Te imaginas esto en tu evento? 📩 Escríbenos.
 
 ### Sábado — Reel: “Un cóctel en 15 segundos”
 **Formato:** plano cenital o frontal, cortes al ritmo de la música.
 
-1. Hielo al vaso (sonido real).
-2. Verter ron y maracuyá.
-3. Agitar la coctelera mirando a cámara.
-4. Colar, decorar, deslizar el vaso hacia la cámara.
+1. Hielo a la coctelera (sonido real).
+2. Verter y agitar mirando a cámara.
+3. Servir en copa, como en `fotos/g-pinkpour.webp`.
+4. Burbuja de humo encima y romperla en cámara lenta.
 
 > ¿Cuál quieres que preparemos el próximo sábado? Te leemos en comentarios. 👇
 
 ## Semana 2
 
-### Lunes — Detrás de la barra (foto o video del equipo)
+### Lunes — Detrás de la barra (foto `fotos/exp-coctel.webp` o `fotos/g-pour.webp`)
 > Detrás de cada cóctel hay manos que llevan años agitando, midiendo y cuidando el detalle. Te presentamos al equipo que va a estar en tu evento. 🤝
 
 ### Martes — Reel: “3 errores al contratar una barra para tu boda”
@@ -89,14 +89,14 @@ Al día siguiente, comparte el resultado y el cóctel ganador preparado en video
 ### Jueves — Historia: caja de preguntas
 “¿Qué quieres saber antes de contratar una barra?” Responde 3–4 en historias y guárdalas en un destacado “Preguntas”.
 
-### Viernes — Evento real (carrusel de fotos)
+### Viernes — Evento real (carrusel: `fotos/g-barra.webp`, `g-balance.webp`, `exp-show.webp`, `g-flair.webp`)
 > Así se vivió [tipo de evento] el fin de semana. ✨ [N] invitados, [N] cócteles servidos y una pista que no paró.
 > Gracias por dejarnos ser parte. 🧡
 
 *(Pide permiso al cliente antes de publicar fotos de su evento.)*
 
 ### Sábado — Reserva (imagen)
-**Gráfico:** `graficos/04-reserva-tu-fecha.png`
+**Gráfico:** `graficos/06-reserva-tu-fecha.jpg`
 
 > Reserva tu fecha. 📅
 > Cuéntanos qué celebras, cuántos invitados y dónde: te enviamos una propuesta a tu medida.
@@ -120,14 +120,3 @@ Las piezas con mejor rendimiento serán las de tu barra real. En el próximo eve
 - La barra terminada con luz encendida, antes de que lleguen los invitados.
 - Manos de invitados recibiendo el cóctel (sin rostros, no requiere permiso).
 - Un brindis grupal.
-
-## Prompts para generar fotos con IA (opcional)
-
-Si quieres imágenes de apoyo mientras reúnes fotos propias, estos prompts funcionan en cualquier generador de imágenes:
-
-1. *Barra móvil de coctelería en una boda al aire libre al atardecer, madera oscura y detalles dorados, hojas tropicales, botellas ordenadas, luces cálidas colgantes, fotografía realista, 4:5.*
-2. *Primer plano de un cóctel de maracuyá en vaso alto con hielo, media maracuyá y hierbabuena de decoración, fondo verde oscuro desenfocado, luz lateral cálida, fotografía de producto, 4:5.*
-3. *Manos de un bartender agitando una coctelera dorada detrás de una barra con frutas tropicales, fondo de fiesta desenfocado, fotografía realista, 9:16.*
-4. *Mesa cenital con tres cócteles de colores (naranja, verde, rosa), cítricos cortados, hojas de monstera, superficie de piedra oscura, 1:1.*
-
-Avisa en la publicación si una imagen es generada y no muestres como “evento real” algo que no lo es.

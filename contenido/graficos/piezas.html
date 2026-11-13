@@ -2,172 +2,161 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>Exótico Bar Mixology — piezas para redes</title>
+<title>Exótico Bar & Mixology — piezas para redes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --selva:#0d2b24; --selva2:#143d33; --oro:#e3b866; --coral:#ff6f4e;
-    --crema:#f6ecd9; --maracuya:#f5a524; --hoja:#2f7a5c;
-  }
+  :root{ --negro:#0a0806; --oro:#d9ad52; --oro2:#f3d78c; --oro3:#9c6f1f; --crema:#f4ead6; }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:#222;display:flex;flex-wrap:wrap;gap:40px;padding:40px;font-family:'Outfit',sans-serif}
-  .pieza{width:1080px;height:1350px;position:relative;overflow:hidden;color:var(--crema);
-    background:radial-gradient(120% 90% at 20% 0%,var(--selva2),var(--selva) 60%);padding:90px}
+  body{background:#333;display:flex;flex-wrap:wrap;gap:40px;padding:40px;font-family:'Outfit',sans-serif}
+  .pieza{width:1080px;height:1350px;position:relative;overflow:hidden;color:var(--crema);background:var(--negro)}
   .pieza.story{height:1920px}
-  .pieza.clara{background:var(--crema);color:var(--selva)}
-  h1,h2{font-family:'Fraunces',serif;font-weight:800;line-height:.98;letter-spacing:-.02em}
-  .marca{font-family:'Outfit';font-weight:600;letter-spacing:.42em;font-size:24px;text-transform:uppercase;color:var(--oro)}
-  .clara .marca{color:var(--hoja)}
-  .pie{position:absolute;left:90px;right:90px;bottom:80px;display:flex;justify-content:space-between;align-items:center;
-    font-size:26px;letter-spacing:.2em;text-transform:uppercase;color:var(--oro)}
-  .clara .pie{color:var(--hoja)}
-  .linea{height:2px;background:currentColor;opacity:.5;flex:1;margin:0 28px}
-  .hoja{position:absolute;pointer-events:none;aspect-ratio:1;height:auto}
-  em{font-style:italic;font-weight:500;color:var(--oro)}
-  .clara em{color:var(--coral)}
+  .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .velo{position:absolute;inset:0}
+  .marco{position:absolute;inset:36px;border:2px solid rgba(217,173,82,.55);pointer-events:none}
+  .cont{position:absolute;left:96px;right:96px}
+  .marca{position:absolute;top:92px;left:96px;font-family:'Cinzel',serif;color:var(--oro);line-height:1}
+  .marca b{display:block;font-weight:500;font-size:44px;letter-spacing:.14em}
+  .marca span{display:block;font-size:19px;letter-spacing:.42em;margin-top:10px;padding-left:3px}
+  .eti{font-family:'Cinzel',serif;font-size:24px;letter-spacing:.38em;text-transform:uppercase;color:var(--oro)}
+  h1,h2{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:.95;letter-spacing:-.01em}
+  em{font-style:italic;font-weight:500;background:linear-gradient(100deg,var(--oro2),var(--oro) 55%,var(--oro3));-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+  p{font-weight:300;line-height:1.32}
+  .pie{position:absolute;left:96px;right:96px;bottom:88px;display:flex;align-items:center;font-family:'Cinzel',serif;
+    font-size:22px;letter-spacing:.34em;text-transform:uppercase;color:var(--oro)}
+  .pie i{flex:1;height:1px;background:var(--oro);opacity:.6;margin:0 26px}
 
-  /* 1 */
-  #p1 h1{font-size:150px;margin-top:330px}
-  #p1 p{font-size:40px;font-weight:300;margin-top:44px;max-width:760px;line-height:1.3}
-  /* 2 */
-  #p2 h2{font-size:104px;margin-top:70px}
-  #p2 ul{list-style:none;margin-top:64px}
-  #p2 li{display:flex;gap:34px;align-items:baseline;padding:30px 0;border-top:2px solid rgba(227,184,102,.35);font-size:42px}
-  #p2 li:last-child{border-bottom:2px solid rgba(227,184,102,.35)}
-  #p2 li b{font-family:'Fraunces';font-weight:600;color:var(--oro);font-size:38px;min-width:70px}
-  #p2 li span{font-weight:300}
-  /* 3 */
-  #p3 h2{font-size:110px;margin-top:40px;max-width:640px}
-  #p3 .eti{display:inline-block;margin-top:60px;background:var(--coral);color:var(--crema);font-weight:600;letter-spacing:.24em;
-    text-transform:uppercase;font-size:24px;padding:14px 26px;border-radius:99px}
-  #p3 ol{list-style:none;margin-top:54px;max-width:560px}
-  #p3 ol li{display:flex;justify-content:space-between;gap:20px;font-size:36px;padding:20px 0;border-bottom:2px dashed rgba(13,43,36,.25)}
-  #p3 ol li b{font-family:'Fraunces';font-weight:600;white-space:nowrap}
-  #p3 .nota{font-size:30px;margin-top:40px;max-width:560px;line-height:1.35;opacity:.8}
-  #p3 .copa{position:absolute;right:30px;top:330px;width:440px}
-  /* 4 */
-  #p4{background:var(--coral);color:var(--crema)}
-  #p4 .marca,#p4 .pie{color:var(--selva)}
-  #p4 h1{font-size:176px;margin-top:250px}
-  #p4 h1 em{color:var(--selva)}
-  #p4 p{font-size:42px;margin-top:50px;max-width:800px;line-height:1.3}
-  #p4 .btn{display:inline-block;margin-top:60px;background:var(--selva);color:var(--crema);font-size:38px;font-weight:600;
-    padding:30px 56px;border-radius:99px;letter-spacing:.04em}
-  /* 5 story */
-  #p5{text-align:center;padding-top:260px}
-  #p5 h2{font-size:128px;margin-top:150px}
-  #p5 .vs{display:flex;gap:36px;margin-top:120px}
-  #p5 .op{flex:1;border:3px solid var(--oro);border-radius:44px;padding:70px 20px 60px}
-  #p5 .op svg{width:210px;height:250px}
-  #p5 .op div{font-family:'Fraunces';font-weight:600;font-size:64px;margin-top:30px}
-  #p5 .op small{display:block;font-size:30px;font-weight:300;margin-top:12px;opacity:.85}
-  #p5 .hint{margin-top:110px;font-size:36px;font-weight:300;letter-spacing:.06em;color:var(--oro)}
+  /* 1 presentación */
+  #p1 .bg{object-position:50% 20%}
+  #p1 .velo{background:linear-gradient(180deg,rgba(10,8,6,.75) 0,rgba(10,8,6,.1) 22%,rgba(10,8,6,0) 45%,rgba(10,8,6,.88) 68%,rgba(10,8,6,.97) 100%)}
+  #p1 .cont{bottom:170px}
+  #p1 h1{font-size:136px}
+  #p1 p{font-size:36px;margin-top:30px;max-width:800px}
+
+  /* 2 qué incluye */
+  #p2 .bg{opacity:.22;object-position:60% 50%}
+  #p2 .velo{background:linear-gradient(180deg,rgba(10,8,6,.6),rgba(10,8,6,.92))}
+  #p2 .cont{top:250px}
+  #p2 h2{font-size:104px}
+  #p2 ul{list-style:none;margin-top:60px}
+  #p2 li{display:flex;gap:36px;align-items:baseline;padding:28px 0;border-top:1px solid rgba(217,173,82,.45);font-size:40px;font-weight:300}
+  #p2 li:last-child{border-bottom:1px solid rgba(217,173,82,.45)}
+  #p2 li b{font-family:'Cinzel',serif;font-weight:500;color:var(--oro);font-size:30px;min-width:64px}
+
+  /* 3-5 experiencias */
+  .exp .velo{background:linear-gradient(180deg,rgba(10,8,6,.7) 0,rgba(10,8,6,0) 24%,rgba(10,8,6,0) 50%,rgba(10,8,6,.9) 76%,rgba(10,8,6,.97) 100%)}
+  .exp .cont{bottom:170px}
+  .exp h2{font-size:128px;margin-top:22px}
+  .exp p{font-size:35px;margin-top:26px;max-width:820px}
+  #p3 .bg{object-position:63% 50%}
+  #p4 .bg{object-position:30% 30%}
+  #p4 .velo{background:linear-gradient(180deg,rgba(10,8,6,.7) 0,rgba(10,8,6,0) 22%,rgba(10,8,6,.1) 42%,rgba(10,8,6,.92) 66%,rgba(10,8,6,.98) 100%)}
+  #p5 .bg{object-position:40% 40%}
+
+  /* 6 reserva */
+  #p6{background:radial-gradient(90% 60% at 50% 30%,#2a1d08,var(--negro) 70%);text-align:center}
+  #p6 .sello{width:520px;height:520px;margin:130px auto 0;display:block;filter:drop-shadow(0 20px 60px rgba(217,173,82,.25))}
+  #p6 h1{font-size:150px;margin-top:50px}
+  #p6 p{font-size:36px;margin:28px auto 0;max-width:760px}
+  #p6 .btn{display:inline-block;margin-top:46px;padding:26px 54px;border-radius:99px;font-size:32px;font-weight:500;letter-spacing:.04em;color:var(--negro);
+    background:linear-gradient(100deg,var(--oro2),var(--oro) 60%,var(--oro3))}
+
+  /* 7 historia */
+  #p7 .bg{object-position:50% 50%}
+  #p7 .velo{background:linear-gradient(180deg,rgba(10,8,6,.92) 0,rgba(10,8,6,.55) 30%,rgba(10,8,6,0) 48%,rgba(10,8,6,.2) 75%,rgba(10,8,6,.9) 100%)}
+  #p7 .marca{top:230px;left:0;right:0;text-align:center}
+  #p7 .cont{top:400px;text-align:center}
+  #p7 h2{font-size:150px}
+  #p7 .hint{position:absolute;left:0;right:0;bottom:270px;text-align:center;font-family:'Cinzel',serif;font-size:28px;letter-spacing:.34em;color:var(--oro2)}
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <symbol id="palma" viewBox="0 0 400 400">
-      <g fill="currentColor">
-        <path d="M200 390C190 250 140 130 20 60c110 20 170 80 190 170C215 120 260 50 370 10 300 80 260 160 240 240c40-60 90-90 150-90-80 40-130 110-160 240z"/>
-      </g>
-    </symbol>
-    <symbol id="monstera" viewBox="0 0 300 300">
-      <path fill="currentColor" d="M150 290C60 250 10 170 30 70c20 10 40 30 50 50 0-40 10-80 40-110 10 30 15 55 15 85 20-40 50-65 95-75-5 40-25 70-50 95 35-10 65-5 95 15-30 30-65 40-100 35 30 15 50 35 60 65-40 5-70-5-95-30 5 30 10 60 10 90z"/>
-    </symbol>
-  </defs>
-</svg>
-
 <!-- 1 · Presentación -->
 <section class="pieza" id="p1">
-  <svg class="hoja" style="right:-110px;top:-80px;width:640px;color:#1d5a47;transform:rotate(18deg)"><use href="#palma"/></svg>
-  <svg class="hoja" style="right:150px;top:120px;width:300px;color:var(--hoja);transform:rotate(-30deg)"><use href="#monstera"/></svg>
-  <svg class="hoja" style="left:-120px;bottom:-110px;width:420px;color:#1d5a47;transform:rotate(40deg)"><use href="#monstera"/></svg>
-  <div class="marca">Exótico Bar Mixology</div>
-  <h1>Llevamos<br>el bar a<br><em>tu evento.</em></h1>
-  <p>Barra móvil de coctelería de autor para bodas, cumpleaños y eventos privados.</p>
-  <div class="pie"><span>Coctelería</span><span class="linea"></span><span>Eventos</span></div>
-</section>
-
-<!-- 2 · Servicios -->
-<section class="pieza" id="p2">
-  <svg class="hoja" style="right:-140px;bottom:-120px;width:520px;color:#1d5a47;transform:rotate(-25deg)"><use href="#palma"/></svg>
-  <div class="marca">Exótico Bar Mixology</div>
-  <h2>Tú brindas.<br><em>Nosotros nos encargamos.</em></h2>
-  <ul>
-    <li><b>01</b><span>Barra montada y decorada</span></li>
-    <li><b>02</b><span>Bartenders profesionales</span></li>
-    <li><b>03</b><span>Carta diseñada para tu evento</span></li>
-    <li><b>04</b><span>Cristalería, hielo e insumos</span></li>
-    <li><b>05</b><span>Opciones sin alcohol</span></li>
-  </ul>
-  <div class="pie"><span>Qué incluye</span><span class="linea"></span><span>Desliza →</span></div>
-</section>
-
-<!-- 3 · Cóctel de autor -->
-<section class="pieza clara" id="p3">
-  <svg class="hoja" style="right:-90px;top:-90px;width:460px;color:#cfe3d2;transform:rotate(200deg)"><use href="#monstera"/></svg>
-  <div class="marca">Exótico Bar Mixology</div>
-  <span class="eti">Cóctel de la casa</span>
-  <h2>Maracuyá <em>Exótico</em></h2>
-  <ol>
-    <li><span>Ron blanco</span><b>2 oz</b></li>
-    <li><span>Pulpa de maracuyá</span><b>1½ oz</b></li>
-    <li><span>Jugo de limón</span><b>¾ oz</b></li>
-    <li><span>Jarabe simple</span><b>½ oz</b></li>
-    <li><span>Hierbabuena</span><b>6 hojas</b></li>
-  </ol>
-  <p class="nota">Agita con hielo, cuela sobre hielo nuevo y decora con media maracuyá.</p>
-  <svg class="copa" viewBox="0 0 440 760">
-    <circle cx="250" cy="210" r="170" fill="#f5a524" opacity=".22"/>
-    <path d="M70 120h300l-34 380a40 40 0 0 1-40 36H144a40 40 0 0 1-40-36z" fill="#fff" opacity=".55"/>
-    <path d="M84 250h272l-22 248a40 40 0 0 1-40 36H146a40 40 0 0 1-40-36z" fill="#f5a524"/>
-    <path d="M84 250h272l-6 70H90z" fill="#ffc45a"/>
-    <rect x="130" y="290" width="74" height="74" rx="12" fill="#fff" opacity=".45" transform="rotate(-12 167 327)"/>
-    <rect x="226" y="330" width="74" height="74" rx="12" fill="#fff" opacity=".4" transform="rotate(14 263 367)"/>
-    <rect x="160" y="410" width="70" height="70" rx="12" fill="#fff" opacity=".35" transform="rotate(8 195 445)"/>
-    <path d="M70 120h300l-34 380a40 40 0 0 1-40 36H144a40 40 0 0 1-40-36z" fill="none" stroke="#0d2b24" stroke-width="8"/>
-    <line x1="270" y1="40" x2="212" y2="500" stroke="#ff6f4e" stroke-width="12" stroke-linecap="round"/>
-    <g transform="translate(330 120)">
-      <circle r="66" fill="#5b2a6e"/><circle r="52" fill="#ffd35a"/>
-      <g fill="#0d2b24"><circle cx="-18" cy="-12" r="6"/><circle cx="14" cy="-20" r="6"/><circle cx="22" cy="12" r="6"/><circle cx="-8" cy="20" r="6"/><circle cx="-28" cy="12" r="5"/><circle cx="2" cy="0" r="6"/></g>
-    </g>
-    <g fill="#2f7a5c"><ellipse cx="120" cy="108" rx="44" ry="20" transform="rotate(-35 120 108)"/><ellipse cx="168" cy="92" rx="44" ry="20" transform="rotate(-70 168 92)"/></g>
-    <ellipse cx="220" cy="590" rx="170" ry="16" fill="#0d2b24" opacity=".12"/>
-  </svg>
-  <div class="pie"><span>Receta</span><span class="linea"></span><span>Guárdala</span></div>
-</section>
-
-<!-- 4 · Llamado a la acción -->
-<section class="pieza" id="p4">
-  <svg class="hoja" style="right:-120px;top:-100px;width:600px;color:#ff8b6f;transform:rotate(15deg)"><use href="#palma"/></svg>
-  <svg class="hoja" style="left:-100px;bottom:-120px;width:400px;color:#ff8b6f;transform:rotate(60deg)"><use href="#monstera"/></svg>
-  <div class="marca">Exótico Bar Mixology</div>
-  <h1>Reserva<br><em>tu fecha.</em></h1>
-  <p>Las fechas de temporada se agotan rápido. Cuéntanos de tu evento y te enviamos una propuesta.</p>
-  <span class="btn">Escríbenos por mensaje directo</span>
-  <div class="pie"><span>Bodas</span><span class="linea"></span><span>Fiestas · Empresas</span></div>
-</section>
-
-<!-- 5 · Historia: encuesta -->
-<section class="pieza story" id="p5">
-  <svg class="hoja" style="right:-130px;top:-90px;width:560px;color:#1d5a47;transform:rotate(20deg)"><use href="#palma"/></svg>
-  <svg class="hoja" style="left:-130px;bottom:-110px;width:480px;color:#1d5a47;transform:rotate(35deg)"><use href="#monstera"/></svg>
-  <div class="marca">Exótico Bar Mixology</div>
-  <h2>¿Qué pides<br><em>primero?</em></h2>
-  <div class="vs">
-    <div class="op">
-      <svg viewBox="0 0 210 250"><path d="M45 20h120l-12 200a14 14 0 0 1-14 12H71a14 14 0 0 1-14-12z" fill="#bfe6c4" stroke="#e3b866" stroke-width="5"/><g fill="#2f7a5c"><ellipse cx="85" cy="90" rx="22" ry="10" transform="rotate(-30 85 90)"/><ellipse cx="125" cy="140" rx="22" ry="10" transform="rotate(25 125 140)"/><ellipse cx="95" cy="185" rx="22" ry="10" transform="rotate(-15 95 185)"/></g><circle cx="150" cy="30" r="26" fill="#b8d94a" stroke="#f6ecd9" stroke-width="5"/><line x1="130" y1="0" x2="100" y2="215" stroke="#ff6f4e" stroke-width="7" stroke-linecap="round"/></svg>
-      <div>Mojito</div><small>fresco y clásico</small>
-    </div>
-    <div class="op">
-      <svg viewBox="0 0 210 250"><path d="M15 40h180c0 50-40 85-90 85S15 90 15 40z" fill="#f4e58a" stroke="#e3b866" stroke-width="5"/><path d="M12 40h186" stroke="#f6ecd9" stroke-width="10" stroke-linecap="round"/><line x1="105" y1="125" x2="105" y2="215" stroke="#e3b866" stroke-width="7"/><path d="M60 228h90" stroke="#e3b866" stroke-width="9" stroke-linecap="round"/><circle cx="180" cy="38" r="26" fill="#b8d94a" stroke="#f6ecd9" stroke-width="5"/></svg>
-      <div>Margarita</div><small>cítrica y con sal</small>
-    </div>
+  <img class="bg" src="../fotos/g-barra.webp" alt="">
+  <div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont">
+    <h1>Llevamos el bar<br>a <em>tu evento.</em></h1>
+    <p>Barra móvil, coctelería de autor y show en vivo para bodas, fiestas y eventos privados.</p>
   </div>
-  <p class="hint">Vota en la encuesta ↓</p>
+  <div class="pie"><span>Coctelería</span><i></i><span>Eventos</span></div>
+</section>
+
+<!-- 2 · Qué incluye -->
+<section class="pieza" id="p2">
+  <img class="bg" src="../fotos/g-flair.webp" alt="">
+  <div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont">
+    <h2>Tú brindas.<br><em>Nosotros nos encargamos.</em></h2>
+    <ul>
+      <li><b>01</b><span>Barra montada y decorada</span></li>
+      <li><b>02</b><span>Bartenders profesionales</span></li>
+      <li><b>03</b><span>Carta diseñada para tu evento</span></li>
+      <li><b>04</b><span>Show de flair y coctelería con humo</span></li>
+      <li><b>05</b><span>Cristalería, hielo e insumos</span></li>
+    </ul>
+  </div>
+  <div class="pie"><span>Qué incluye</span><i></i><span>Desliza →</span></div>
+</section>
+
+<!-- 3 · Experiencia: flair -->
+<section class="pieza exp" id="p3">
+  <img class="bg" src="../fotos/g-balance.webp" alt="">
+  <div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont">
+    <div class="eti">Experiencia · 01</div>
+    <h2>Show de <em>flair</em></h2>
+    <p>Botellas en el aire y cócteles servidos con espectáculo. Tus invitados no van a soltar el teléfono.</p>
+  </div>
+  <div class="pie"><span>En vivo</span><i></i><span>En tu evento</span></div>
+</section>
+
+<!-- 4 · Experiencia: molecular -->
+<section class="pieza exp" id="p4">
+  <img class="bg" src="../fotos/exp-molecular.webp" alt="">
+  <div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont">
+    <div class="eti">Experiencia · 02</div>
+    <h2>Mixología <em>molecular</em></h2>
+    <p>Humo, burbujas aromáticas y presentaciones que se viven con todos los sentidos.</p>
+  </div>
+  <div class="pie"><span>Humo</span><i></i><span>Aroma · Sabor</span></div>
+</section>
+
+<!-- 5 · Experiencia: de autor -->
+<section class="pieza exp" id="p5">
+  <img class="bg" src="../fotos/g-bubbles.webp" alt="">
+  <div class="velo"></div><div class="marco"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont">
+    <div class="eti">Experiencia · 03</div>
+    <h2>Coctelería<br><em>de autor</em></h2>
+    <p>Una carta creada para tu celebración, con cócteles que no vas a encontrar en otra barra.</p>
+  </div>
+  <div class="pie"><span>Hecho a mano</span><i></i><span>Para ti</span></div>
+</section>
+
+<!-- 6 · Reserva -->
+<section class="pieza" id="p6">
+  <div class="marco"></div>
+  <img class="sello" src="../fotos/sello.webp" alt="Exótico Bar & Mixology">
+  <h1>Reserva <em>tu fecha.</em></h1>
+  <p>Cuéntanos qué celebras y te enviamos una propuesta a tu medida.</p>
+  <span class="btn">Escríbenos por mensaje directo</span>
+</section>
+
+<!-- 7 · Historia: encuesta -->
+<section class="pieza story" id="p7">
+  <img class="bg" src="../fotos/hero-poster.jpg" alt="">
+  <div class="velo"></div>
+  <div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+  <div class="cont"><h2>¿Con humo<br>o <em>sin humo?</em></h2></div>
+  <div class="hint">VOTA EN LA ENCUESTA ↓</div>
 </section>
 
 </body>
