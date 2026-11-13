@@ -109,6 +109,10 @@ SD 1.5 trabaja bien cerca de 512 px. Genera pequeño y amplía después.
 
 ## Video: estado real
 
+**Probado en CPU con AMX (sin GPU):** AnimateDiff-Lightning de 4 pasos sobre Realistic Vision V5.1 (`workflows/txt2vid-animatediff-lightning.json`, requiere el nodo `ComfyUI-AnimateDiff-Evolved`). Funciona: 16 fotogramas de 512 × 768 en unos 5,5 minutos. **La calidad no sirve para la marca**: encuadre pobre, casi sin movimiento y muy por debajo de las imágenes SDXL. No lo uses en piezas finales.
+
+Alternativa que sí da resultado sin GPU: imagen SDXL + movimiento de cámara por profundidad (`contenido/video/ai-commercial-v1/parallax.py`). Mueve la cámara, no a los sujetos.
+
 No hay flujos de video incluidos porque no se pudieron verificar sin GPU. Modelos abiertos adecuados cuando haya tarjeta gráfica:
 
 | Modelo | Licencia | VRAM | Uso |

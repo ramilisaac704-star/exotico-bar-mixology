@@ -21,6 +21,8 @@ Sin servicios de pago, créditos ni cuentas. Todo se ejecutó localmente.
 
 No hay video generativo: la máquina no tiene tarjeta gráfica. Cada plano es una imagen fija con movimiento de cámara en 3D; los líquidos, el humo y las personas no se mueven.
 
+Se intentó video generativo real con AnimateDiff-Lightning en CPU. Se ejecutó (16 fotogramas en 5,5 minutos), pero el resultado —un primer plano mal encuadrado, casi inmóvil y a 512 × 768— quedó muy por debajo del resto y no se incluyó. Las demos gratuitas en línea tampoco sirvieron: cupo anónimo agotado en Hugging Face y baja resolución con marca de agua en la otra opción probada.
+
 ## Archivos
 
 - `tomas.json` — prompt y semilla de cada toma. `generar.py` las produce.
