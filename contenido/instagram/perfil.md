@@ -10,12 +10,12 @@ EXÓTICO · Barra Móvil Punta Cana
 
 *Editar perfil → Nombre.* Instagram solo deja cambiarlo dos veces cada 14 días.
 
-## 2. Biografía (148 de 150 caracteres)
+## 2. Biografía (145 de 150 caracteres)
 
 ```
 Barra móvil premium · Mixología de autor · Showtending
 Bodas · Corporativos · Eventos privados
-📍 Punta Cana · Bávaro · toda RD 🇩🇴
+📍 Punta Cana · Bávaro · toda RD
 Reserva tu fecha ↓
 ```
 
