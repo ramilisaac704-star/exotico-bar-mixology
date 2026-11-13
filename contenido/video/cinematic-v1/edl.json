@@ -1,0 +1,179 @@
+{
+  "fps": 30,
+  "bpm": 136,
+  "musica_desde": 2.95,
+  "duracion_total": 31.77,
+  "planos": [
+    {
+      "plano": 0,
+      "origen": "v3",
+      "inicio_original": 4.3,
+      "entra": 0.0,
+      "sale": 2.3,
+      "velocidad": 1.0,
+      "nota": "GANCHO: lanzamiento de la coctelera al aire"
+    },
+    {
+      "plano": 1,
+      "origen": "v3",
+      "inicio_original": 44.0,
+      "entra": 2.3,
+      "sale": 4.067,
+      "velocidad": 1.0,
+      "nota": "General: brazo extendido, playa y barra"
+    },
+    {
+      "plano": 2,
+      "origen": "v1",
+      "inicio_original": 8.0,
+      "entra": 4.067,
+      "sale": 5.833,
+      "velocidad": 1.0,
+      "nota": "Revisa la coctelera"
+    },
+    {
+      "plano": 3,
+      "origen": "v1",
+      "inicio_original": 13.2,
+      "entra": 5.833,
+      "sale": 7.6,
+      "velocidad": 1.0,
+      "nota": "Detalle: manos y vertido"
+    },
+    {
+      "plano": 4,
+      "origen": "v2",
+      "inicio_original": 8.0,
+      "entra": 7.6,
+      "sale": 9.367,
+      "velocidad": 1.0,
+      "nota": "Vertido en chorro desde la botella"
+    },
+    {
+      "plano": 5,
+      "origen": "v2",
+      "inicio_original": 17.8,
+      "entra": 9.367,
+      "sale": 11.133,
+      "velocidad": 1.0,
+      "nota": "Botella verde en la mano"
+    },
+    {
+      "plano": 6,
+      "origen": "v1",
+      "inicio_original": 40.5,
+      "entra": 11.133,
+      "sale": 12.867,
+      "velocidad": 1.0,
+      "nota": "Detalle: manos trabajando"
+    },
+    {
+      "plano": 7,
+      "origen": "v2",
+      "inicio_original": 54.0,
+      "entra": 12.867,
+      "sale": 13.767,
+      "velocidad": 1.0,
+      "nota": "IMPACTO: coctelera sobre la cabeza"
+    },
+    {
+      "plano": 8,
+      "origen": "v3",
+      "inicio_original": 13.0,
+      "entra": 13.767,
+      "sale": 14.633,
+      "velocidad": 1.0,
+      "nota": "Giro de coctelera"
+    },
+    {
+      "plano": 9,
+      "origen": "v2",
+      "inicio_original": 48.6,
+      "entra": 14.633,
+      "sale": 15.533,
+      "velocidad": 1.0,
+      "nota": "Agitado enérgico"
+    },
+    {
+      "plano": 10,
+      "origen": "v3",
+      "inicio_original": 31.6,
+      "entra": 15.533,
+      "sale": 16.4,
+      "velocidad": 1.0,
+      "nota": "Coctelera en primer término"
+    },
+    {
+      "plano": 11,
+      "origen": "v2",
+      "inicio_original": 56.4,
+      "entra": 16.4,
+      "sale": 17.3,
+      "velocidad": 1.0,
+      "nota": "Coctelera en alto"
+    },
+    {
+      "plano": 12,
+      "origen": "v3",
+      "inicio_original": 5.0,
+      "entra": 17.3,
+      "sale": 18.167,
+      "velocidad": 1.0,
+      "nota": "General del lanzamiento"
+    },
+    {
+      "plano": 13,
+      "origen": "v2",
+      "inicio_original": 0.4,
+      "entra": 18.167,
+      "sale": 19.067,
+      "velocidad": 1.0,
+      "nota": "Botella sobre el antebrazo"
+    },
+    {
+      "plano": 14,
+      "origen": "v3",
+      "inicio_original": 14.0,
+      "entra": 19.067,
+      "sale": 19.933,
+      "velocidad": 1.0,
+      "nota": "Coctelera en movimiento"
+    },
+    {
+      "plano": 15,
+      "origen": "v1",
+      "inicio_original": 20.0,
+      "entra": 19.933,
+      "sale": 21.7,
+      "velocidad": 0.5,
+      "nota": "CÁMARA LENTA: vertido desde lo alto"
+    },
+    {
+      "plano": 16,
+      "origen": "v3",
+      "inicio_original": 55.6,
+      "entra": 21.7,
+      "sale": 23.467,
+      "velocidad": 0.5,
+      "nota": "CÁMARA LENTA: vertido naranja"
+    },
+    {
+      "plano": 17,
+      "origen": "v3",
+      "inicio_original": 62.0,
+      "entra": 23.467,
+      "sale": 26.133,
+      "velocidad": 1.0,
+      "nota": "CIERRE: cóctel terminado"
+    },
+    {
+      "plano": 18,
+      "origen": "v2",
+      "inicio_original": 77.5,
+      "entra": 26.133,
+      "sale": 28.767,
+      "velocidad": 1.0,
+      "nota": "General: mirando el atardecer"
+    }
+  ]
+}

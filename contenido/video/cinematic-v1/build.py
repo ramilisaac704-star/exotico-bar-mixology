@@ -75,7 +75,9 @@ for i, (src, start, beats, crop, speed, note) in enumerate(PLANOS):
     n = end_frame - frame
     out = WORK / f"plano{i:02d}.mp4"
     dur_out = n / FPS
-    if speed == 1.0:
+    if out.exists():
+        pass  # ya renderizado: borra el archivo para rehacer este plano
+    elif speed == 1.0:
         vf = f"{crop},scale=1080:1920:flags=lanczos,{GRADE},fps={FPS},format=yuv420p"
         ff("-ss", start, "-t", dur_out + 0.2, "-i", SRC / f"{src}.mp4",
            "-vf", vf, "-af", "aresample=44100,volume=1", "-ac", "2", "-frames:v", n,
@@ -103,8 +105,8 @@ ff("-f", "concat", "-safe", "0", "-i", WORK / "lista.txt", "-c", "copy", WORK / 
 
 total = body + END_CARD
 t3_in = times[-1]["entra"]
-audio = (f"[0:a]volume=0.22[amb];[amus]atrim=start={MUSIC_OFFSET}:duration={total},asetpts=PTS-STARTPTS,"
-         f"afade=t=in:st=0:d=0.4,afade=t=out:st={total-1.6}:d=1.6,volume=0.9[mus];"
+audio = (f"[0:a]volume=0.3[amb];[amus]atrim=start={MUSIC_OFFSET}:duration={total},asetpts=PTS-STARTPTS,"
+         f"afade=t=in:st=0:d=0.4,afade=t=out:st={total-1.6}:d=1.6,volume=0.5[mus];"
          f"[amb]apad=whole_dur={total}[ambp];[ambp][mus]amix=inputs=2:normalize=0:duration=longest,"
          f"alimiter=limit=0.95,atrim=duration={total}[a]")
 
@@ -121,7 +123,7 @@ def export(with_text, out):
                f";[0:v][2:v]overlay[v0];[v0][t1]overlay=enable='between(t,0.15,2.27)'[v1]"
                f";[v1][t2]overlay=enable='between(t,2.35,4.02)'[v2]"
                f";[v2][t3]overlay=enable='gte(t,{t3_in+0.15})'[v3]"
-               f";[v3]fade=t=in:st=0:d=0.2,fade=t=out:st={body-0.3}:d=0.3,setsar=1[bodyv]"
+               f";[v3]trim=duration={body},setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.2,fade=t=out:st={body-0.3}:d=0.3,setsar=1[bodyv]"
                f";[6:v]fps={FPS},format=yuv420p,trim=duration={END_CARD},setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.35,setsar=1[endv]"
                f";[bodyv][endv]concat=n=2:v=1:a=0,format=yuv420p[v]")
     else:
