@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--oro:#d9ad52;--oro2:#f3d78c;--crema:#f6ecd8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;position:relative;overflow:hidden;background:#0a0806;color:var(--crema)}
+#bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* Todo lo importante dentro del recorte 3:4 de la cuadrícula del perfil (y 240–1680) */
+.velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,.55) 0,rgba(10,8,6,0) 22%,rgba(10,8,6,0) 50%,rgba(10,8,6,.78) 74%,rgba(10,8,6,.9) 100%)}
+.marco{position:absolute;left:60px;right:60px;top:290px;bottom:290px;border:2px solid rgba(217,173,82,.55)}
+.marca{position:absolute;top:340px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;color:var(--oro2);line-height:1;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.marca b{display:block;font-weight:500;font-size:44px;letter-spacing:.18em;padding-left:.18em}
+.marca span{display:block;font-size:16px;letter-spacing:.5em;margin-top:12px;padding-left:.5em}
+.t{position:absolute;left:0;right:0;top:1250px;text-align:center}
+.eti{display:flex;align-items:center;justify-content:center;gap:24px;font-family:'Cinzel',serif;font-size:24px;letter-spacing:.42em;color:var(--oro2);padding-left:.42em}
+.eti::before,.eti::after{content:"";width:70px;height:1px;background:var(--oro)}
+h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:132px;line-height:1;margin-top:22px;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+em{font-style:italic;font-weight:500;background:linear-gradient(100deg,#f8e2a0,var(--oro) 60%,#b8862e);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.06em}
+</style></head><body>
+<img id="bg" alt=""><div class="velo"></div><div class="marco"></div>
+<div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+<div class="t"><div class="eti">SHOW EN VIVO</div><h1>Creo<br><em>experiencias.</em></h1></div>
+<script>document.getElementById('bg').src = new URLSearchParams(location.search).get('bg');</script>
+</body></html>

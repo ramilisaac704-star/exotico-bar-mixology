@@ -1,0 +1,124 @@
+{
+  "fps": 30,
+  "bpm": 136.0,
+  "musica": "Electronic_K_Deep_Nyah.mp3",
+  "musica_desde_s": 4.458,
+  "cuerpo_s": 17.633,
+  "total_s": 19.4,
+  "textos": {
+    "t1": [
+      0.35,
+      2.45
+    ],
+    "t2": [
+      5.4,
+      6.89
+    ],
+    "t3": [
+      7.22,
+      8.68
+    ],
+    "t4": [
+      14.28,
+      17.38
+    ]
+  },
+  "planos": [
+    {
+      "plano": "humo",
+      "nota": "GANCHO: el vaso se llena de humo",
+      "origen_s": 87.35,
+      "velocidad": 0.5,
+      "entra": 0.0,
+      "sale": 2.633
+    },
+    {
+      "plano": "rojo",
+      "nota": "Sirope rojo sobre el hielo",
+      "origen_s": 3.2,
+      "velocidad": 1.0,
+      "entra": 2.633,
+      "sale": 3.533
+    },
+    {
+      "plano": "chorro",
+      "nota": "Vertido alto en cámara lenta",
+      "origen_s": 24.95,
+      "velocidad": 0.5,
+      "entra": 3.533,
+      "sale": 5.3
+    },
+    {
+      "plano": "agitado",
+      "nota": "Agitado con los brazos abiertos",
+      "origen_s": 23.0,
+      "velocidad": 1.0,
+      "entra": 5.3,
+      "sale": 6.167
+    },
+    {
+      "plano": "brazo",
+      "nota": "Gesto amplio de flair",
+      "origen_s": 26.95,
+      "velocidad": 1.0,
+      "entra": 6.167,
+      "sale": 7.067
+    },
+    {
+      "plano": "naranja",
+      "nota": "Capa naranja sobre la roja (degradado)",
+      "origen_s": 42.0,
+      "velocidad": 0.5,
+      "entra": 7.067,
+      "sale": 8.833
+    },
+    {
+      "plano": "arriba",
+      "nota": "Coctelera por encima de la cabeza",
+      "origen_s": 48.95,
+      "velocidad": 0.5,
+      "entra": 8.833,
+      "sale": 10.6
+    },
+    {
+      "plano": "presenta",
+      "nota": "Presenta el trago",
+      "origen_s": 53.7,
+      "velocidad": 1.0,
+      "entra": 10.6,
+      "sale": 11.467
+    },
+    {
+      "plano": "risa",
+      "nota": "Se ríe a cámara",
+      "origen_s": 56.2,
+      "velocidad": 1.0,
+      "entra": 11.467,
+      "sale": 13.233
+    },
+    {
+      "plano": "salon",
+      "nota": "Lleva los tragos al salón",
+      "origen_s": 64.2,
+      "velocidad": 1.0,
+      "entra": 13.233,
+      "sale": 14.133
+    },
+    {
+      "plano": "reaccion",
+      "nota": "Humo frente al invitado: reacción",
+      "origen_s": 71.0,
+      "velocidad": 1.0,
+      "entra": 14.133,
+      "sale": 15.867
+    },
+    {
+      "plano": "nube",
+      "nota": "La nube de humo en cámara lenta",
+      "origen_s": 74.4,
+      "velocidad": 0.5,
+      "entra": 15.867,
+      "sale": 17.633
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "nota": "Origen 2160x3840 a 59.94 fps. Encuadre [x, y, ancho, alto] en píxeles del original (siempre 9:16). Velocidad 0.5 = cámara lenta real con los fotogramas de 60 fps.",
+  "bpm": 136.0,
+  "drop_musica_s": 7.105,
+  "planos": [
+    {
+      "id": "humo",
+      "src": 87.35,
+      "pulsos": 6,
+      "vel": 0.5,
+      "crop": [
+        0,
+        820,
+        1296,
+        2304
+      ],
+      "luz": "salon",
+      "estab": true,
+      "nota": "GANCHO: el vaso se llena de humo"
+    },
+    {
+      "id": "rojo",
+      "src": 3.2,
+      "pulsos": 2,
+      "vel": 1.0,
+      "crop": [
+        500,
+        700,
+        1080,
+        1920
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Sirope rojo sobre el hielo"
+    },
+    {
+      "id": "chorro",
+      "src": 24.95,
+      "pulsos": 4,
+      "vel": 0.5,
+      "crop": [
+        432,
+        576,
+        1080,
+        1920
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Vertido alto en cámara lenta"
+    },
+    {
+      "id": "agitado",
+      "src": 23.0,
+      "pulsos": 2,
+      "vel": 1.0,
+      "crop": [
+        0,
+        0,
+        1620,
+        2880
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Agitado con los brazos abiertos"
+    },
+    {
+      "id": "brazo",
+      "src": 26.95,
+      "pulsos": 2,
+      "vel": 1.0,
+      "crop": [
+        0,
+        200,
+        1620,
+        2880
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Gesto amplio de flair"
+    },
+    {
+      "id": "naranja",
+      "src": 42.0,
+      "pulsos": 4,
+      "vel": 0.5,
+      "crop": [
+        860,
+        1380,
+        1080,
+        1920
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Capa naranja sobre la roja (degradado)"
+    },
+    {
+      "id": "arriba",
+      "src": 48.95,
+      "pulsos": 4,
+      "vel": 0.5,
+      "crop": [
+        0,
+        0,
+        1620,
+        2880
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Coctelera por encima de la cabeza"
+    },
+    {
+      "id": "presenta",
+      "src": 53.7,
+      "pulsos": 2,
+      "vel": 1.0,
+      "crop": [
+        380,
+        500,
+        1296,
+        2304
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Presenta el trago"
+    },
+    {
+      "id": "risa",
+      "src": 56.2,
+      "pulsos": 4,
+      "vel": 1.0,
+      "crop": [
+        430,
+        500,
+        1296,
+        2304
+      ],
+      "luz": "barra",
+      "estab": false,
+      "nota": "Se ríe a cámara"
+    },
+    {
+      "id": "salon",
+      "src": 64.2,
+      "pulsos": 2,
+      "vel": 1.0,
+      "crop": [
+        540,
+        960,
+        1620,
+        2880
+      ],
+      "luz": "salon",
+      "estab": true,
+      "nota": "Lleva los tragos al salón"
+    },
+    {
+      "id": "reaccion",
+      "src": 71.0,
+      "pulsos": 4,
+      "vel": 1.0,
+      "crop": [
+        540,
+        960,
+        1620,
+        2880
+      ],
+      "luz": "salon",
+      "estab": true,
+      "nota": "Humo frente al invitado: reacción"
+    },
+    {
+      "id": "nube",
+      "src": 74.4,
+      "pulsos": 4,
+      "vel": 0.5,
+      "crop": [
+        540,
+        960,
+        1620,
+        2880
+      ],
+      "luz": "salon",
+      "estab": true,
+      "nota": "La nube de humo en cámara lenta"
+    }
+  ],
+  "fin_pulsos": 4
+}
