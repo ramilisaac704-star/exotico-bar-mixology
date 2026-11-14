@@ -1,0 +1,97 @@
+{
+  "fps": 30,
+  "musica": "House_D_Reasonably_Cool.mp3",
+  "musica_desde_s": 58.096,
+  "subida_musica_s": 68.0,
+  "bpm": 117.45,
+  "cuerpo_s": 11.966666666666667,
+  "total_s": 14.067,
+  "textos": {
+    "t1": [
+      0.25,
+      3.48
+    ],
+    "t2": [
+      4.82,
+      7.65
+    ],
+    "t3": [
+      10.45,
+      11.97
+    ]
+  },
+  "planos": [
+    {
+      "plano": 0,
+      "nota": "GANCHO: barrido por las botellas",
+      "origen_s": 11.5,
+      "velocidad": 1.0,
+      "entra": 0.0,
+      "sale": 1.567
+    },
+    {
+      "plano": 1,
+      "nota": "La barra completa (sin el letrero del local)",
+      "origen_s": 0.0,
+      "velocidad": 1.25,
+      "entra": 1.567,
+      "sale": 3.633
+    },
+    {
+      "plano": 2,
+      "nota": "Canela y plantas",
+      "origen_s": 5.45,
+      "velocidad": 1.0,
+      "entra": 3.633,
+      "sale": 4.7
+    },
+    {
+      "plano": 3,
+      "nota": "Siropes con vertedores",
+      "origen_s": 6.95,
+      "velocidad": 1.0,
+      "entra": 4.7,
+      "sale": 5.733
+    },
+    {
+      "plano": 4,
+      "nota": "Cocteleras tornasoladas",
+      "origen_s": 8.15,
+      "velocidad": 1.0,
+      "entra": 5.733,
+      "sale": 6.767
+    },
+    {
+      "plano": 5,
+      "nota": "Coladores y medidores",
+      "origen_s": 9.3,
+      "velocidad": 1.0,
+      "entra": 6.767,
+      "sale": 7.8
+    },
+    {
+      "plano": 6,
+      "nota": "Medidores y colador",
+      "origen_s": 15.0,
+      "velocidad": 1.0,
+      "entra": 7.8,
+      "sale": 8.833
+    },
+    {
+      "plano": 7,
+      "nota": "La mano sobre la barra",
+      "origen_s": 16.05,
+      "velocidad": 1.0,
+      "entra": 8.833,
+      "sale": 9.9
+    },
+    {
+      "plano": 8,
+      "nota": "REVELADO: la barra frente al lobby",
+      "origen_s": 17.35,
+      "velocidad": 1.0,
+      "entra": 9.9,
+      "sale": 11.967
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--negro:#0a0806;--oro:#d9ad52;--oro2:#f3d78c;--oro3:#9c6f1f;--crema:#f6ecd8}
+*{margin:0;padding:0;box-sizing:border-box}body{background:transparent}
+.f{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--crema)}
+/* Velos: arriba para la marca, abajo-centro para el texto. La toma es clara (mármol blanco). */
+.velo{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(10,8,6,.62) 0,rgba(10,8,6,0) 20%,rgba(10,8,6,0) 48%,rgba(10,8,6,.55) 72%,rgba(10,8,6,.82) 100%)}
+.marca{position:absolute;top:268px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;color:var(--oro2);line-height:1;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+.marca b{display:block;font-weight:500;font-size:40px;letter-spacing:.18em;padding-left:.18em}
+.marca span{display:block;font-size:15px;letter-spacing:.48em;margin-top:11px;padding-left:.48em}
+.bloque{position:absolute;left:70px;right:70px;top:1060px;text-align:center}
+.halo{position:absolute;left:-40px;right:-40px;top:960px;height:560px;background:radial-gradient(50% 50% at 50% 50%,rgba(8,6,4,.58),rgba(8,6,4,.32) 55%,rgba(8,6,4,0) 100%)}
+.eti{display:flex;align-items:center;justify-content:center;gap:26px;font-family:'Cinzel',serif;font-size:22px;letter-spacing:.42em;color:var(--oro2);padding-left:.42em;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+.eti::before,.eti::after{content:"";width:70px;height:1px;background:var(--oro);opacity:.85}
+h1{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:104px;line-height:1.02;margin-top:26px;text-shadow:0 3px 8px rgba(0,0,0,.55),0 0 40px rgba(0,0,0,.45)}
+em{font-style:italic;font-weight:500;color:var(--oro2);background:linear-gradient(100deg,#f8e2a0,var(--oro) 60%,#b8862e);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.06em;filter:drop-shadow(0 3px 6px rgba(0,0,0,.55))}
+#fin{background:radial-gradient(85% 50% at 50% 36%,#2a1d08,var(--negro) 72%);text-align:center}
+#fin .marco{position:absolute;inset:40px;border:2px solid rgba(217,173,82,.5)}
+#fin img{width:400px;height:400px;margin-top:370px;filter:drop-shadow(0 18px 50px rgba(217,173,82,.22))}
+#fin .nombre{font-family:'Cinzel',serif;font-weight:500;font-size:62px;letter-spacing:.16em;padding-left:.16em;color:var(--oro2);margin-top:46px}
+#fin .sub{font-family:'Cinzel',serif;font-size:19px;letter-spacing:.5em;padding-left:.5em;color:var(--oro);margin-top:12px}
+#fin .cta{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:54px;margin-top:70px;color:var(--crema)}
+#fin .tel{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:118px;letter-spacing:.02em;margin-top:6px;color:var(--oro2)}
+#fin .zona{font-family:'Cinzel',serif;font-size:21px;letter-spacing:.34em;padding-left:.34em;color:var(--crema);opacity:.85;margin-top:30px}
+#fin .ig{font-family:'Outfit',sans-serif;font-weight:300;font-size:30px;letter-spacing:.06em;margin-top:22px;opacity:.8}
+</style></head><body>
+<div class="f" id="base"><div class="velo"></div><div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div></div>
+<div class="f" id="t1"><div class="halo"></div><div class="bloque"><div class="eti">EL MONTAJE</div><h1>Antes de que lleguen<br>tus <em>invitados…</em></h1></div></div>
+<div class="f" id="t2"><div class="halo"></div><div class="bloque"><h1>cada detalle<br>en su <em>lugar.</em></h1></div></div>
+<div class="f" id="t3"><div class="halo"></div><div class="bloque"><div class="eti">TU EVENTO</div><h1>Todo <em>listo.</em></h1></div></div>
+<div class="f" id="fin"><div class="marco"></div><img src="../../fotos/sello.webp" alt="">
+  <div class="nombre">EXÓTICO</div><div class="sub">BAR &amp; MIXOLOGY</div>
+  <div class="cta">Reserva tu fecha por WhatsApp</div><div class="tel">829-320-9581</div>
+  <div class="zona">PUNTA CANA · BÁVARO · TODA RD</div><div class="ig">@exotico_mixology</div></div>
+</body></html>
