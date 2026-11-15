@@ -30,9 +30,11 @@ def ff(*args):
 LOOK = {
     "barra": ("curves=m='0/0 0.12/0.095 0.5/0.5 0.86/0.885 1/0.975',eq=contrast=1.07:saturation=1.06:gamma=0.985,"
               "colorbalance=rs=-0.02:gs=0:bs=0.035:rm=0.05:gm=0.012:bm=-0.055:rh=0.045:gh=0.012:bh=-0.075"),
-    "salon": ("colortemperature=temperature=4100:mix=0.62,curves=m='0/0 0.14/0.12 0.5/0.52 0.86/0.88 1/0.975',"
-              "eq=contrast=1.06:saturation=0.9:gamma=1.03,"
-              "colorbalance=rs=0.0:bs=0.02:rm=0.075:gm=0.015:bm=-0.09:rh=0.05:gh=0.015:bh=-0.07"),
+    # El salón está iluminado con LED morado: se templa a ámbar y se apagan azules y magentas
+    "salon": ("colortemperature=temperature=3300:mix=0.95,"
+              "selectivecolor=blues=0.4 0.15 -0.45 0.1:magentas=0.3 -0.4 0.35 0.05,hue=s=0.62,"
+              "curves=m='0/0 0.14/0.12 0.5/0.52 0.86/0.88 1/0.975',eq=contrast=1.1:gamma=1.04,"
+              "colorbalance=rs=0.03:gs=0.01:bs=-0.04:rm=0.12:gm=0.04:bm=-0.14:rh=0.07:gh=0.03:bh=-0.09"),
 }
 BLOOM = ("split[b][hl];[hl]colorlevels=rimin=0.74:gimin=0.74:bimin=0.74,gblur=sigma=26,"
          "colorbalance=rm=0.1:bm=-0.1[glow];[b][glow]blend=all_mode=screen:all_opacity=0.26")
