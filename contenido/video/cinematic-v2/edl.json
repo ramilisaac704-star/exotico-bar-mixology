@@ -1,0 +1,263 @@
+{
+  "fps": 30,
+  "bpm": 129.2,
+  "beat": 0.4643962848297214,
+  "ancho": 1080,
+  "alto": 1720,
+  "cuerpo_s": 29.267,
+  "fin_s": 2.8,
+  "planos": [
+    {
+      "plano": "humo",
+      "nota": "GANCHO: el vaso se llena de humo, cámara lenta 5x, lento avance",
+      "origen": [
+        87.35,
+        88.643
+      ],
+      "entra": 0.0,
+      "sale": 6.5,
+      "fotogramas": 195,
+      "velocidad": [
+        0.2,
+        0.2
+      ],
+      "region": [
+        6,
+        566,
+        1506,
+        2368
+      ]
+    },
+    {
+      "plano": "rojo",
+      "nota": "GOLPE: sirope rojo sobre el hielo",
+      "origen": [
+        3.15,
+        4.05
+      ],
+      "entra": 6.5,
+      "sale": 7.433,
+      "fotogramas": 28,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        412,
+        676,
+        1254,
+        1968
+      ]
+    },
+    {
+      "plano": "chorro",
+      "nota": "Vertido alto: entra a velocidad real y frena en el chorro",
+      "origen": [
+        24.95,
+        26.343
+      ],
+      "entra": 7.433,
+      "sale": 10.233,
+      "fotogramas": 84,
+      "velocidad": [
+        0.3,
+        1.0
+      ],
+      "region": [
+        344,
+        552,
+        1254,
+        1968
+      ]
+    },
+    {
+      "plano": "agitado",
+      "nota": "Agitado con los brazos abiertos",
+      "origen": [
+        23.0,
+        23.867
+      ],
+      "entra": 10.233,
+      "sale": 11.133,
+      "fotogramas": 27,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        0,
+        0,
+        1832,
+        2904
+      ]
+    },
+    {
+      "plano": "brazo",
+      "nota": "Gesto amplio de flair",
+      "origen": [
+        26.95,
+        27.85
+      ],
+      "entra": 11.133,
+      "sale": 12.067,
+      "fotogramas": 28,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        0,
+        176,
+        1832,
+        2928
+      ]
+    },
+    {
+      "plano": "naranja",
+      "nota": "La capa naranja sobre la roja, 2x lento",
+      "origen": [
+        42.0,
+        43.383
+      ],
+      "entra": 12.067,
+      "sale": 14.867,
+      "fotogramas": 84,
+      "velocidad": [
+        0.5,
+        0.5
+      ],
+      "region": [
+        772,
+        1356,
+        1254,
+        1968
+      ]
+    },
+    {
+      "plano": "arriba",
+      "nota": "HÉROE: la coctelera sube a velocidad real y se congela en lo alto (4x) con la gota",
+      "origen": [
+        48.6,
+        50.44
+      ],
+      "entra": 14.867,
+      "sale": 18.567,
+      "fotogramas": 111,
+      "velocidad": [
+        0.25,
+        1.0
+      ],
+      "region": [
+        0,
+        36,
+        1832,
+        2928
+      ]
+    },
+    {
+      "plano": "presenta",
+      "nota": "Presenta el trago",
+      "origen": [
+        53.65,
+        54.55
+      ],
+      "entra": 18.567,
+      "sale": 19.5,
+      "fotogramas": 28,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        280,
+        476,
+        1496,
+        2352
+      ]
+    },
+    {
+      "plano": "risa",
+      "nota": "Se ríe a cámara, lento avance al rostro",
+      "origen": [
+        56.2,
+        58.967
+      ],
+      "entra": 19.5,
+      "sale": 22.3,
+      "fotogramas": 84,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        330,
+        476,
+        1496,
+        2352
+      ]
+    },
+    {
+      "plano": "salon",
+      "nota": "Lleva los tragos al salón",
+      "origen": [
+        64.2,
+        65.567
+      ],
+      "entra": 22.3,
+      "sale": 23.7,
+      "fotogramas": 42,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        320,
+        916,
+        1840,
+        2924
+      ]
+    },
+    {
+      "plano": "reaccion",
+      "nota": "Humo frente al invitado: la reacción",
+      "origen": [
+        71.0,
+        72.8
+      ],
+      "entra": 23.7,
+      "sale": 25.533,
+      "fotogramas": 55,
+      "velocidad": [
+        1.0,
+        1.0
+      ],
+      "region": [
+        320,
+        916,
+        1840,
+        2924
+      ]
+    },
+    {
+      "plano": "nube",
+      "nota": "La nube de humo cae sobre la mesa, 3x lento",
+      "origen": [
+        74.4,
+        75.695
+      ],
+      "entra": 25.533,
+      "sale": 29.267,
+      "fotogramas": 112,
+      "velocidad": [
+        0.35,
+        0.35
+      ],
+      "region": [
+        378,
+        926,
+        1744,
+        2748
+      ]
+    }
+  ]
+}

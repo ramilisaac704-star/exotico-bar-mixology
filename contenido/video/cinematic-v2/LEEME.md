@@ -16,6 +16,14 @@ Rehecho desde `20260621_220247.mp4` (2160 × 3840, 59,94 fps, 89 s) con un plant
 | Sonido | brillo del audio real | audio real estirado con rubberband en los tramos lentos, dron, subida, golpe grave, aire en cada cámara lenta, swell final |
 | Texto | 4 titulares grandes | tipografía de cine: cursiva fina, etiquetas espaciadas, entrada con deriva |
 
+## Verificación hecha
+
+- Encuadres inicial y final de los 12 planos revisados antes de renderizar; look de color probado en fotogramas reales (3 variantes por ambiente).
+- Interpolación RIFE comprobada en pares de fotogramas reales: sin artefactos visibles en la coctelera ni en el humo.
+- Montaje revisado plano a plano a tamaño completo: ningún texto tapa la acción; sin fotogramas negros salvo el corte a la tarjeta (0,2 s, intencional).
+- Audio: −13,5 LUFS integrados, pico −1,5 dBFS; la transcripción automática de la mezcla no detecta letra (la canción del local quedó fuera).
+- 963 fotogramas, 32,1 s, 1080 × 1920, 30 fps, 46 MB.
+
 ## Archivos
 
 - `planos.json` — lista de planos: origen, pulsos, curva de velocidad, cámara inicial/final, ambiente, estabilización.

@@ -28,8 +28,11 @@ def ff(*args):
 
 # 1. Etalonaje -----------------------------------------------------------------------------
 LOOK = {
-    "barra": ("curves=m='0/0 0.12/0.095 0.5/0.5 0.86/0.885 1/0.975',eq=contrast=1.07:saturation=1.06:gamma=0.985,"
-              "colorbalance=rs=-0.02:gs=0:bs=0.035:rm=0.05:gm=0.012:bm=-0.055:rh=0.045:gh=0.012:bh=-0.075"),
+    # Las tiras LED del bar tiñen los blancos de lila: se apagan magentas y azules y se calienta un punto
+    "barra": ("colortemperature=temperature=5200:mix=0.5,"
+              "selectivecolor=magentas=0.15 -0.5 0.2 0:blues=0.3 0.15 -0.45 0:whites=0.05 -0.1 0.12 0,"
+              "curves=m='0/0 0.12/0.1 0.5/0.52 0.86/0.89 1/0.975',eq=contrast=1.07:saturation=0.98:gamma=1.0,"
+              "colorbalance=rs=-0.02:gs=0.03:bs=0.01:rm=0.03:gm=0.05:bm=-0.08:rh=0.045:gh=0.035:bh=-0.09"),
     # El salón está iluminado con LED morado: se templa a ámbar y se apagan azules y magentas
     "salon": ("colortemperature=temperature=3300:mix=0.95,"
               "selectivecolor=blues=0.4 0.15 -0.45 0.1:magentas=0.3 -0.4 0.35 0.05,hue=s=0.62,"
@@ -38,7 +41,7 @@ LOOK = {
 }
 BLOOM = ("split[b][hl];[hl]colorlevels=rimin=0.74:gimin=0.74:bimin=0.74,gblur=sigma=26,"
          "colorbalance=rm=0.1:bm=-0.1[glow];[b][glow]blend=all_mode=screen:all_opacity=0.26")
-GRAIN = "noise=c0s=5:c0f=t+u:c1s=2:c1f=t+u:c2s=2:c2f=t+u,vignette=PI/4.9"
+GRAIN = "noise=c0s=5:c0f=t+u:c1s=2:c1f=t+u:c2s=2:c2f=t+u,vignette=PI/5.6"
 
 graded = []
 for i, e in enumerate(edl["planos"]):
@@ -172,8 +175,9 @@ def export(with_text, name):
             fc += (f";[{4 + k}:v]format=rgba,fade=t=in:st={a}:d={fin_}:alpha=1,fade=t=out:st={z - fout}:d={fout}:alpha=1[x{k}]"
                    f";[{last}][x{k}]overlay=y='18*pow(1-min(1,max(0,(t-{a})/{fin_ + 0.3})),2)':enable='between(t,{a},{z})'[w{k + 1}]")
             last = f"w{k + 1}"
-    fc += (f";[{last}]trim=duration={BODY},setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.8,fade=t=out:st={BODY - 0.45}:d=0.45,setsar=1[body]"
-           f";[1:v]fps={FPS},format=yuv420p,fade=t=in:st=0:d=0.5,setsar=1[endv]"
+    # Sin fundido de entrada: el primer fotograma es la miniatura por defecto en Instagram
+    fc += (f";[{last}]trim=duration={BODY},setpts=PTS-STARTPTS,fade=t=out:st={BODY - 0.3}:d=0.3,setsar=1[body]"
+           f";[1:v]fps={FPS},format=yuv420p,fade=t=in:st=0:d=0.35,setsar=1[endv]"
            f";[body][endv]concat=n=2:v=1:a=0,format=yuv420p[v]"
            f";[2:a]loudnorm=I=-14:TP=-1.5:LRA=9,aresample={SR}[a]")
     ff(*inputs, "-filter_complex", fc, "-map", "[v]", "-map", "[a]", "-t", TOTAL, "-r", FPS,
