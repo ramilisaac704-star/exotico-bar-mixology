@@ -1,0 +1,22 @@
+{
+  "nota": "Origen 2160x3840 a 59.94 fps. cam = [cx, cy, alto] en píxeles del original al inicio y al final del plano (el ancho sale de la proporción 1080:1720). vel = curva de velocidad [fracción del plano, velocidad]; 0.25 = cámara lenta 4x (fotogramas reales de 60 fps + RIFE).",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1720,
+  "bpm": 129.2,
+  "planos": [
+    {"id": "humo",     "src": 87.35, "pulsos": 14, "vel": [[0, 0.2], [1, 0.2]],                                                        "cam": [[760, 1750, 2320], [700, 1650, 2000]], "luz": "salon", "estab": false, "nota": "GANCHO: el vaso se llena de humo, cámara lenta 5x, lento avance"},
+    {"id": "rojo",     "src": 3.15,  "pulsos": 2,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[1040, 1660, 1920], [1030, 1640, 1820]], "luz": "barra", "estab": false, "nota": "GOLPE: sirope rojo sobre el hielo"},
+    {"id": "chorro",   "src": 24.95, "pulsos": 6,  "vel": [[0, 1.0], [0.22, 1.0], [0.35, 0.3], [1, 0.3]],                              "cam": [[972, 1536, 1920], [910, 1580, 1620]], "luz": "barra", "estab": false, "nota": "Vertido alto: entra a velocidad real y frena en el chorro"},
+    {"id": "agitado",  "src": 23.0,  "pulsos": 2,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[810, 1440, 2880], [830, 1440, 2760]], "luz": "barra", "estab": false, "nota": "Agitado con los brazos abiertos"},
+    {"id": "brazo",    "src": 26.95, "pulsos": 2,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[810, 1640, 2880], [830, 1640, 2760]], "luz": "barra", "estab": false, "nota": "Gesto amplio de flair"},
+    {"id": "naranja",  "src": 42.0,  "pulsos": 6,  "vel": [[0, 0.5], [1, 0.5]],                                                        "cam": [[1400, 2340, 1920], [1380, 2300, 1760]], "luz": "barra", "estab": false, "nota": "La capa naranja sobre la roja, 2x lento"},
+    {"id": "arriba",   "src": 48.6,  "pulsos": 8,  "vel": [[0, 1.0], [0.2, 1.0], [0.28, 0.25], [0.75, 0.25], [0.85, 0.6], [1, 0.6]],  "cam": [[810, 1500, 2880], [880, 1250, 2250]], "luz": "barra", "estab": false, "nota": "HÉROE: la coctelera sube a velocidad real y se congela en lo alto (4x) con la gota"},
+    {"id": "presenta", "src": 53.65, "pulsos": 2,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[1028, 1652, 2304], [1020, 1640, 2220]], "luz": "barra", "estab": false, "nota": "Presenta el trago"},
+    {"id": "risa",     "src": 56.2,  "pulsos": 6,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[1078, 1652, 2304], [1060, 1560, 2000]], "luz": "barra", "estab": false, "nota": "Se ríe a cámara, lento avance al rostro"},
+    {"id": "salon",    "src": 64.2,  "pulsos": 3,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[1250, 2380, 2880], [1240, 2360, 2780]], "luz": "salon", "estab": true,  "nota": "Lleva los tragos al salón"},
+    {"id": "reaccion", "src": 71.0,  "pulsos": 4,  "vel": [[0, 1.0], [1, 1.0]],                                                        "cam": [[1250, 2380, 2880], [1220, 2330, 2560]], "luz": "salon", "estab": true,  "nota": "Humo frente al invitado: la reacción"},
+    {"id": "nube",     "src": 74.4,  "pulsos": 8,  "vel": [[0, 0.35], [1, 0.35]],                                                      "cam": [[1250, 2300, 2700], [1200, 2200, 2300]], "luz": "salon", "estab": true,  "nota": "La nube de humo cae sobre la mesa, 3x lento"}
+  ],
+  "fin_pulsos": 6
+}
