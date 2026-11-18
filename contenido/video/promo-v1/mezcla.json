@@ -1,0 +1,25 @@
+{
+  "musica": "Electronic_K_Deep_Nyah.mp3",
+  "golpe_en_pista_s": 7.089,
+  "musica_desde_s": 5.322,
+  "golpe_en_reel_s": 1.767,
+  "total_s": 22.933,
+  "textos": {
+    "t1": [
+      2.73,
+      5.18
+    ],
+    "t2": [
+      8.93,
+      10.48
+    ],
+    "t3": [
+      16.02,
+      17.53
+    ],
+    "t4": [
+      17.73,
+      19.28
+    ]
+  }
+}

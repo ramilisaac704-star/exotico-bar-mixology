@@ -1,0 +1,221 @@
+{
+  "fps": 30,
+  "bpm": 136.0,
+  "beat": 0.4411764705882353,
+  "ancho": 1080,
+  "alto": 1920,
+  "cuerpo_s": 19.4,
+  "fin_s": 3.533,
+  "planos": [
+    {
+      "plano": "humo",
+      "fuente": "j",
+      "nota": "GANCHO: el vaso se llena de humo (cámara lenta 5x)",
+      "origen": [
+        87.35,
+        87.697
+      ],
+      "entra": 0.0,
+      "sale": 1.767,
+      "velocidad": [
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "plano": "cabeza",
+      "fuente": "c",
+      "nota": "GOLPE: coctelera sobre la cabeza",
+      "origen": [
+        8.65,
+        9.483
+      ],
+      "entra": 1.767,
+      "sale": 2.633,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "botellas",
+      "fuente": "a",
+      "nota": "Botellas de colores en 4K",
+      "origen": [
+        0.15,
+        1.017
+      ],
+      "entra": 2.633,
+      "sale": 3.533,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "jugo",
+      "fuente": "b",
+      "nota": "Jugo a las cocteleras",
+      "origen": [
+        18.0,
+        18.833
+      ],
+      "entra": 3.533,
+      "sale": 4.4,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "doble",
+      "fuente": "c",
+      "nota": "Vierte de la coctelera al vaso",
+      "origen": [
+        30.45,
+        31.317
+      ],
+      "entra": 4.4,
+      "sale": 5.3,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "medidores",
+      "fuente": "a",
+      "nota": "Medidores, cocteleras y plantas",
+      "origen": [
+        7.7,
+        8.533
+      ],
+      "entra": 5.3,
+      "sale": 6.167,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "lanza",
+      "fuente": "b",
+      "nota": "Lanza la botella al aire",
+      "origen": [
+        8.7,
+        9.379
+      ],
+      "entra": 6.167,
+      "sale": 7.067,
+      "velocidad": [
+        0.55,
+        1.0
+      ]
+    },
+    {
+      "plano": "prepara",
+      "fuente": "c",
+      "nota": "Prepara en la barra",
+      "origen": [
+        0.05,
+        0.883
+      ],
+      "entra": 7.067,
+      "sale": 7.933,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "pecho",
+      "fuente": "c",
+      "nota": "Vertido a la altura del pecho",
+      "origen": [
+        31.6,
+        32.467
+      ],
+      "entra": 7.933,
+      "sale": 8.833,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "arriba",
+      "fuente": "j",
+      "nota": "Coctelera congelada en lo alto (4K 60 fps)",
+      "origen": [
+        48.75,
+        49.737
+      ],
+      "entra": 8.833,
+      "sale": 10.6,
+      "velocidad": [
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "plano": "alto",
+      "fuente": "c",
+      "nota": "HÉROE: vertido alto desde la coctelera",
+      "origen": [
+        35.6,
+        37.565
+      ],
+      "entra": 10.6,
+      "sale": 15.0,
+      "velocidad": [
+        0.35,
+        1.0
+      ]
+    },
+    {
+      "plano": "presenta",
+      "fuente": "c",
+      "nota": "Presenta el trago",
+      "origen": [
+        41.0,
+        41.833
+      ],
+      "entra": 15.0,
+      "sale": 15.867,
+      "velocidad": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "plano": "entrega",
+      "fuente": "c",
+      "nota": "Lo entrega al invitado",
+      "origen": [
+        46.7,
+        48.263
+      ],
+      "entra": 15.867,
+      "sale": 17.633,
+      "velocidad": [
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "plano": "nube",
+      "fuente": "j",
+      "nota": "El humo llega a la mesa",
+      "origen": [
+        74.4,
+        75.007
+      ],
+      "entra": 17.633,
+      "sale": 19.4,
+      "velocidad": [
+        0.35,
+        0.35
+      ]
+    }
+  ]
+}

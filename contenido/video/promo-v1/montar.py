@@ -27,18 +27,18 @@ def ff(*args):
 # 1. Etalonaje (el bloom se mezcla en RGB: en YUV desplaza el color hacia magenta) --------
 BLOOM = ("format=gbrp,split[b][hl];[hl]colorlevels=rimin=0.72:gimin=0.72:bimin=0.72,gblur=sigma=22,"
          "colorbalance=rm=0.1:bm=-0.12[glow];[b][glow]blend=all_mode=screen:all_opacity=0.28")
-FIN = "vibrance=intensity=0.18,noise=c0s=5:c0f=t+u:c1s=2:c1f=t+u:c2s=2:c2f=t+u,vignette=PI/4.8"
+FIN = "vibrance=intensity=0.18,noise=c0s=5:c0f=t+u:c1s=2:c1f=t+u:c2s=2:c2f=t+u,vignette=PI/6.2"
 LOOK = {
-    "dia": ("curves=m='0/0 0.1/0.065 0.5/0.48 0.9/0.92 1/0.97',eq=contrast=1.1:saturation=1.08:gamma=0.95,"
+    "dia": ("curves=m='0/0 0.1/0.065 0.5/0.48 0.9/0.92 1/0.97',eq=contrast=1.08:saturation=1.08:gamma=1.0,"
             "colorbalance=rs=-0.02:gs=0:bs=0.03:rm=0.05:gm=0.01:bm=-0.06:rh=0.05:gh=0.02:bh=-0.08"),
-    "noche": ("curves=m='0/0 0.1/0.07 0.5/0.5 0.9/0.93 1/0.98',eq=contrast=1.1:saturation=1.0:gamma=1.0,"
+    "noche": ("curves=m='0/0 0.1/0.07 0.5/0.5 0.9/0.93 1/0.98',eq=contrast=1.08:saturation=1.0:gamma=1.16,"
               "colorbalance=rs=0.03:gs=0:bs=-0.05:rm=0.03:gm=0:bm=-0.06:rh=0.04:gh=0.02:bh=-0.07"),
-    "calido": ("curves=m='0/0 0.1/0.075 0.5/0.52 0.9/0.92 1/0.97',eq=contrast=1.07:saturation=1.1:gamma=1.04,"
+    "calido": ("curves=m='0/0 0.1/0.075 0.5/0.52 0.9/0.92 1/0.97',eq=contrast=1.06:saturation=1.1:gamma=1.07,"
                "colorbalance=rs=-0.02:bs=0.02:rm=0.04:gm=0.01:bm=-0.05:rh=0.04:gh=0.02:bh=-0.06"),
-    "barra_j": ("curves=m='0/0 0.1/0.075 0.5/0.51 0.88/0.9 1/0.975',eq=contrast=1.08:saturation=1.02,"
+    "barra_j": ("curves=m='0/0 0.1/0.075 0.5/0.51 0.88/0.9 1/0.975',eq=contrast=1.07:saturation=1.02:gamma=1.03,"
                 "colorbalance=rs=-0.02:gs=0.01:bs=0.02:rm=0.04:gm=0.02:bm=-0.06:rh=0.045:gh=0.025:bh=-0.08"),
     "salon": ("colortemperature=temperature=3300:mix=0.95,selectivecolor=blues=0.4 0.15 -0.45 0.1:magentas=0.3 -0.4 0.35 0.05,"
-              "hue=s=0.62,curves=m='0/0 0.12/0.1 0.5/0.52 0.86/0.88 1/0.975',eq=contrast=1.1:gamma=1.04,"
+              "hue=s=0.62,curves=m='0/0 0.12/0.1 0.5/0.52 0.86/0.88 1/0.975',eq=contrast=1.08:gamma=1.16,"
               "colorbalance=rs=0.03:gs=0.01:bs=-0.04:rm=0.12:gm=0.04:bm=-0.14:rh=0.07:gh=0.03:bh=-0.09"),
 }
 graded = []
@@ -100,11 +100,15 @@ def place(sig, at, g, pan=0.0):
     l, r = np.cos((pan + 1) * np.pi / 4), np.sin((pan + 1) * np.pi / 4)
     mix[i:i + len(s), 0] += s * g * l; mix[i:i + len(s), 1] += s * g * r
 
-y, sr0 = librosa.load(MUSIC, sr=22050, mono=True, offset=6.0, duration=2.0)
-oenv = librosa.onset.onset_strength(y=y, sr=sr0, hop_length=128)
-tt0 = librosa.frames_to_time(np.arange(len(oenv)), sr=sr0, hop_length=128) + 6.0
-m = (tt0 > 6.8) & (tt0 < 7.4)
-drop = float(tt0[np.argmax(oenv * m)])
+# La entrada se ancla a la rejilla del bombo (flujo de graves), no al transitorio más fuerte,
+# que en esta pista cae a contratiempo.
+y, sr0 = librosa.load(MUSIC, sr=22050, mono=True, offset=6.5, duration=20)
+Sg = np.abs(librosa.stft(y, hop_length=128)); fq = librosa.fft_frequencies(sr=sr0)
+kick = Sg[fq < 150].sum(axis=0); kick = np.maximum(0, np.diff(kick, prepend=kick[0]))
+tk = librosa.frames_to_time(np.arange(len(kick)), sr=sr0, hop_length=128) + 6.5
+def grid_score(ph): return np.mean([kick[np.argmin(abs(tk - (7.0 + ph + k * BEAT)))] for k in range(36)])
+phase = max(np.linspace(0, BEAT, 90), key=grid_score)
+drop = float(7.0 + phase)
 offset = drop - HIT
 mus, _ = librosa.load(MUSIC, sr=SR, mono=False, offset=offset, duration=TOTAL + 0.5)
 mus = mus.T[:N]
