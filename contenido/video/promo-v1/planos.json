@@ -1,0 +1,474 @@
+{
+  "nota": "cam = [cx, cy, alto] en píxeles de cada fuente, al inicio y al final. vel = curva [fracción, velocidad]. Pulsos a 136 ppm. El plano 0 dura hasta la entrada de la música.",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 136.0,
+  "pulsos_antes_del_golpe": 4,
+  "fuentes": {
+    "a": "drive4/a.mp4",
+    "b": "drive4/b.mp4",
+    "c": "drive4/c.mp4",
+    "j": "drive3/original.mp4"
+  },
+  "planos": [
+    {
+      "id": "humo",
+      "fuente": "j",
+      "src": 87.35,
+      "pulsos": 4,
+      "vel": [
+        [
+          0,
+          0.2
+        ],
+        [
+          1,
+          0.2
+        ]
+      ],
+      "cam": [
+        [
+          760,
+          1700,
+          2600
+        ],
+        [
+          720,
+          1620,
+          2300
+        ]
+      ],
+      "luz": "salon",
+      "nota": "GANCHO: el vaso se llena de humo (cámara lenta 5x)"
+    },
+    {
+      "id": "cabeza",
+      "fuente": "c",
+      "src": 8.65,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          600,
+          1100
+        ],
+        [
+          360,
+          640,
+          1260
+        ]
+      ],
+      "curva": "golpe",
+      "estab": true,
+      "luz": "dia",
+      "nota": "GOLPE: coctelera sobre la cabeza"
+    },
+    {
+      "id": "botellas",
+      "fuente": "a",
+      "src": 0.15,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          1080,
+          2000,
+          3500
+        ],
+        [
+          1150,
+          2050,
+          3000
+        ]
+      ],
+      "luz": "calido",
+      "nota": "Botellas de colores en 4K"
+    },
+    {
+      "id": "jugo",
+      "fuente": "b",
+      "src": 18.0,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          700,
+          1150
+        ],
+        [
+          360,
+          720,
+          1060
+        ]
+      ],
+      "estab": true,
+      "pre": "hqdn3d=4:3:8:6,eq=gamma=1.28:brightness=0.02",
+      "luz": "noche",
+      "nota": "Jugo a las cocteleras"
+    },
+    {
+      "id": "doble",
+      "fuente": "c",
+      "src": 30.45,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          560,
+          1120
+        ],
+        [
+          370,
+          580,
+          1040
+        ]
+      ],
+      "estab": true,
+      "luz": "dia",
+      "nota": "Vierte de la coctelera al vaso"
+    },
+    {
+      "id": "medidores",
+      "fuente": "a",
+      "src": 7.7,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          1080,
+          2300,
+          3000
+        ],
+        [
+          1080,
+          2350,
+          2700
+        ]
+      ],
+      "luz": "calido",
+      "nota": "Medidores, cocteleras y plantas"
+    },
+    {
+      "id": "lanza",
+      "fuente": "b",
+      "src": 8.7,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          0.4,
+          1.0
+        ],
+        [
+          0.6,
+          0.55
+        ],
+        [
+          1,
+          0.55
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          560,
+          1240
+        ],
+        [
+          360,
+          560,
+          1240
+        ]
+      ],
+      "pre": "hqdn3d=4:3:8:6,eq=gamma=1.28:brightness=0.02",
+      "luz": "noche",
+      "nota": "Lanza la botella al aire"
+    },
+    {
+      "id": "prepara",
+      "fuente": "c",
+      "src": 0.05,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          520,
+          1100
+        ],
+        [
+          380,
+          540,
+          1000
+        ]
+      ],
+      "estab": true,
+      "luz": "dia",
+      "nota": "Prepara en la barra"
+    },
+    {
+      "id": "pecho",
+      "fuente": "c",
+      "src": 31.6,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          340,
+          560,
+          1100
+        ],
+        [
+          350,
+          560,
+          1020
+        ]
+      ],
+      "estab": true,
+      "luz": "dia",
+      "nota": "Vertido a la altura del pecho"
+    },
+    {
+      "id": "arriba",
+      "fuente": "j",
+      "src": 48.75,
+      "pulsos": 4,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          0.3,
+          1.0
+        ],
+        [
+          0.45,
+          0.3
+        ],
+        [
+          1,
+          0.3
+        ]
+      ],
+      "cam": [
+        [
+          810,
+          1450,
+          2880
+        ],
+        [
+          860,
+          1320,
+          2420
+        ]
+      ],
+      "luz": "barra_j",
+      "nota": "Coctelera congelada en lo alto (4K 60 fps)",
+      "estab": false
+    },
+    {
+      "id": "alto",
+      "fuente": "c",
+      "src": 35.6,
+      "pulsos": 10,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          0.1,
+          1.0
+        ],
+        [
+          0.2,
+          0.35
+        ],
+        [
+          1,
+          0.35
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          640,
+          1280
+        ],
+        [
+          380,
+          600,
+          1100
+        ]
+      ],
+      "estab": true,
+      "luz": "dia",
+      "nota": "HÉROE: vertido alto desde la coctelera"
+    },
+    {
+      "id": "presenta",
+      "fuente": "c",
+      "src": 41.0,
+      "pulsos": 2,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          1.0
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          620,
+          1120
+        ],
+        [
+          360,
+          600,
+          1020
+        ]
+      ],
+      "estab": true,
+      "luz": "dia",
+      "nota": "Presenta el trago"
+    },
+    {
+      "id": "entrega",
+      "fuente": "c",
+      "src": 46.7,
+      "pulsos": 4,
+      "vel": [
+        [
+          0,
+          1.0
+        ],
+        [
+          1,
+          0.8
+        ]
+      ],
+      "cam": [
+        [
+          360,
+          640,
+          1280
+        ],
+        [
+          360,
+          660,
+          1160
+        ]
+      ],
+      "estab": true,
+      "luz": "dia",
+      "nota": "Lo entrega al invitado"
+    },
+    {
+      "id": "nube",
+      "fuente": "j",
+      "src": 74.4,
+      "pulsos": 4,
+      "vel": [
+        [
+          0,
+          0.35
+        ],
+        [
+          1,
+          0.35
+        ]
+      ],
+      "cam": [
+        [
+          1250,
+          2380,
+          2700
+        ],
+        [
+          1220,
+          2330,
+          2480
+        ]
+      ],
+      "estab": true,
+      "luz": "salon",
+      "nota": "El humo llega a la mesa"
+    }
+  ],
+  "fin_pulsos": 8
+}

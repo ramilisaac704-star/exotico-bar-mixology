@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--oro:#d9ad52;--oro2:#f3d78c;--crema:#f6ecd8}
+*{margin:0;padding:0;box-sizing:border-box}body{background:transparent}
+.f{width:1080px;height:1920px;position:relative;overflow:hidden;color:var(--crema)}
+/* Zona segura: marca bajo los 250 px superiores; textos por encima de los 340 px inferiores */
+.velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,4,.5) 0,rgba(6,5,4,0) 17%,rgba(6,5,4,0) 62%,rgba(6,5,4,.42) 82%,rgba(6,5,4,.6) 100%)}
+.marca{position:absolute;top:262px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;color:var(--oro2);line-height:1;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.marca b{display:block;font-weight:400;font-size:30px;letter-spacing:.34em;padding-left:.34em}
+.marca span{display:block;font-size:12px;letter-spacing:.56em;margin-top:9px;padding-left:.56em}
+.halo{position:absolute;left:-80px;right:-80px;top:1250px;height:420px;background:radial-gradient(50% 50% at 50% 50%,rgba(6,5,3,.55),rgba(6,5,3,.3) 55%,rgba(6,5,3,0) 100%)}
+.b{position:absolute;left:60px;right:60px;top:1395px;text-align:center}
+.eti{display:flex;align-items:center;justify-content:center;gap:26px;font-family:'Cinzel',serif;font-size:30px;letter-spacing:.5em;padding-left:.5em;color:var(--oro2);text-shadow:0 1px 10px rgba(0,0,0,.75)}
+.eti::before,.eti::after{content:"";width:64px;height:1px;background:var(--oro)}
+h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:90px;line-height:1.05;text-shadow:0 2px 6px rgba(0,0,0,.6),0 0 34px rgba(0,0,0,.45)}
+em{font-weight:500;background:linear-gradient(100deg,#f8e2a0,var(--oro) 60%,#b8862e);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.06em;filter:drop-shadow(0 2px 5px rgba(0,0,0,.6))}
+</style></head><body>
+<div class="f" id="base"><div class="velo"></div><div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div></div>
+<div class="f" id="t1"><div class="halo"></div><div class="b"><div class="eti">MIXOLOGÍA DE AUTOR</div></div></div>
+<div class="f" id="t2"><div class="halo"></div><div class="b"><div class="eti">SHOWTENDING</div></div></div>
+<div class="f" id="t3"><div class="halo"></div><div class="b"><h1>No solo preparo cócteles.</h1></div></div>
+<div class="f" id="t4"><div class="halo"></div><div class="b"><h1>Creo <em>experiencias.</em></h1></div></div>
+</body></html>
