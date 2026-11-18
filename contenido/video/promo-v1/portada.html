@@ -1,0 +1,23 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--oro:#d9ad52;--oro2:#f3d78c;--crema:#f6ecd8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;position:relative;overflow:hidden;background:#070604;color:var(--crema)}
+#bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* La cuadrícula del perfil recorta a 3:4 (y 240–1680): todo lo importante vive dentro */
+.velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,6,4,.82) 0,rgba(7,6,4,.55) 20%,rgba(7,6,4,0) 34%,rgba(7,6,4,0) 52%,rgba(7,6,4,.72) 76%,rgba(7,6,4,.9) 100%)}
+.marco{position:absolute;left:56px;right:56px;top:290px;bottom:290px;border:1px solid rgba(217,173,82,.5)}
+.marca{position:absolute;top:350px;left:0;right:0;text-align:center;font-family:'Cinzel',serif;color:var(--oro2);line-height:1;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.marca b{display:block;font-weight:400;font-size:38px;letter-spacing:.34em;padding-left:.34em}
+.marca span{display:block;font-size:14px;letter-spacing:.58em;margin-top:11px;padding-left:.58em}
+.t{position:absolute;left:0;right:0;top:1270px;text-align:center}
+.eti{font-family:'Cinzel',serif;font-size:21px;letter-spacing:.5em;padding-left:.5em;color:var(--oro2);margin-bottom:26px}
+h1{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:118px;line-height:1.02;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+em{font-weight:500;background:linear-gradient(100deg,#f8e2a0,var(--oro) 60%,#b8862e);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.06em}
+</style></head><body>
+<img id="bg" alt=""><div class="velo"></div><div class="marco"></div>
+<div class="marca"><b>EXÓTICO</b><span>BAR &amp; MIXOLOGY</span></div>
+<div class="t"><div class="eti">MIXOLOGÍA · SHOWTENDING</div><h1>Creo<br><em>experiencias.</em></h1></div>
+<script>document.getElementById('bg').src = new URLSearchParams(location.search).get('bg');</script>
+</body></html>
